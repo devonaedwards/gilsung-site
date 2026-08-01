@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gilsung sources and credits: solar terms, star data, the marks</title>
+<meta name="description" content="The data and methods behind Gilsung: solar terms from VSOP87 and Meeus, the Hipparcos and HYG star catalogues, the IAU constellation figures, the name 吉星 and the 四柱 seal.">
+<link rel="canonical" href="https://gilsung.app/credits.html">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#14100C">
+<link rel="stylesheet" href="fonts.css">
+<style>
+:root { --bg:#14100C; --surface:#241c14; --line:#4a3a26; --text:#f2e8d5;
+  --muted:#a2907a; --accent:#C8A24B; --seal:#B23A2E; }
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--text);
+  font:300 17px/1.7 'Mulish',system-ui,sans-serif; }
+.wrap { max-width:800px; margin:0 auto; padding:0 24px; }
+header { display:flex; justify-content:space-between; align-items:center;
+  padding:28px 0; }
+header img { height:50px; }
+nav a { color:var(--muted); text-decoration:none; margin-left:22px;
+  font-size:.85rem; font-weight:600; }
+nav a:hover { color:var(--accent); }
+h1 { font-family:'Fraunces',Georgia,serif; font-weight:500;
+  font-size:clamp(1.8rem,4vw,2.6rem); margin:20px 0 34px; }
+h2 { font-family:'Fraunces',Georgia,serif; font-weight:500;
+  font-size:1.18rem; color:var(--accent); margin:34px 0 10px; }
+p { color:var(--muted); margin-bottom:14px; }
+a { color:var(--accent); }
+footer { border-top:1px solid var(--line); margin-top:56px;
+  padding:32px 0 60px; color:var(--muted); font-size:.85rem; }
+footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <a href="index.html"><img src="img/wordmark.png" alt="Gilsung"></a>
+    <nav>
+      <a href="faq.html">FAQ</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <h1>Sources &amp; credits</h1>
+
+  <p>The data and methods behind the charts and the sky. Updated July 2026.</p>
+
+  <h2>The tradition</h2>
+  <p>
+    The four pillars, the ten heavenly stems and twelve earthly branches, the
+    sexagenary cycle, the ten gods, the twelve stages and the solar terms are
+    ancient, unowned knowledge, far older than any copyright term. Gilsung
+    computes them from first principles with its own tables. Every line of
+    interpretive writing in the app is original and was written for it; none is
+    taken from a modern author.
+  </p>
+
+  <h2>Calendar and solar terms</h2>
+  <p>
+    Solar terms are computed from the Sun's apparent longitude, with the year
+    beginning at lichun (Sun at 315 degrees) and months at the sectional terms.
+    The solar-longitude quantity comes from the VSOP87 planetary theory
+    (Bretagnon and Francou, Bureau des Longitudes) with standard algorithms from
+    Jean Meeus, <em>Astronomical Algorithms</em>. These are published scientific
+    methods; the implementation is entirely Gilsung's own.
+  </p>
+
+  <h2>The twenty-eight mansions</h2>
+  <p>
+    The 二十八宿 and their determinative stars are facts of an ancient system.
+    Star coordinates and magnitudes come from the Hipparcos catalogue, the Yale
+    Bright Star Catalogue and the HYG compilation. Factual astronomical
+    measurements are not subject to copyright.
+  </p>
+
+  <h2>Constellation figures</h2>
+  <p>
+    Where the sky view draws Western constellation figures alongside the
+    mansions, those stick figures are derived from the
+    <a href="https://www.iau.org/public/themes/constellations/">official IAU
+    constellation figures</a> by Sky &amp; Telescope (Alan MacRobert, Roger
+    Sinnott, Rick Fienberg), used under the
+    <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+    Attribution (CC BY)</a> licence.
+  </p>
+
+  <h2>The name and the marks</h2>
+  <p>
+    Gilsung is 吉星, the auspicious star: a real term in 命理 for the favourable
+    stars in a chart, and the idiom 吉星高照. The wordmark is set in Didot with a
+    gold-leaf texture. The seal is a cinnabar name-chop carrying 四柱, the four
+    pillars, in traditional characters, native-confirmed and never simplified.
+  </p>
+
+  <h2>Typefaces</h2>
+  <p>
+    This site is set in Fraunces and Mulish, both offered under the SIL Open Font
+    License and bundled here so your visit is never tracked by a font host. CJK
+    and Thai text is rendered in your own device's system fonts.
+  </p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:hello@gilsung.app">hello@gilsung.app</a></p>
+
+  <footer>
+    &copy; 2026 Gilsung, published by Pacefyx, Inc.
+    <br><br>
+    <a href="index.html">Home</a> &nbsp;&middot;&nbsp;
+    <a href="support.html">Support</a> &nbsp;&middot;&nbsp;
+    <a href="privacy.html">Privacy</a> &nbsp;&middot;&nbsp;
+    <a href="terms.html">Terms</a> &nbsp;&middot;&nbsp;
+    <a href="credits.html">Credits</a>
+  </footer>
+
+</div>
+</body>
+</html>

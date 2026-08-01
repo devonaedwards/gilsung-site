@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gilsung: Private BaZi &amp; Saju Chart App, No Ads</title>
+<meta name="description" content="Read your BaZi (Four Pillars) and Korean saju chart on your own device: day master, luck pillars, compatibility. No account, no ads, no subscription. In 7 languages.">
+<link rel="canonical" href="https://gilsung.app/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#14100C">
+<meta name="author" content="Pacefyx, Inc.">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gilsung">
+<meta property="og:url" content="https://gilsung.app/">
+<meta property="og:title" content="Gilsung: Private BaZi &amp; Saju Chart App, No Ads">
+<meta property="og:description" content="Your Four Pillars chart, computed on your phone with real calendar math. Day master, luck pillars, compatibility. No account, no fortune-teller upsell.">
+<meta property="og:image" content="https://gilsung.app/img/sky-today.png">
+<meta property="og:image:alt" content="Gilsung's sky view in Japanese, naming the lunar mansions Shitsu, Ki, Kyo, Jo and Gyu">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gilsung: Private BaZi &amp; Saju Chart App, No Ads">
+<meta name="twitter:description" content="Your Four Pillars chart, computed on your phone. Day master, luck pillars, compatibility. No account, no ads, no subscription.">
+<meta name="twitter:image" content="https://gilsung.app/img/sky-today.png">
+<link rel="stylesheet" href="fonts.css">
+<style>
+:root { --bg:#14100C; --surface:#241c14; --line:#4a3a26; --text:#f2e8d5;
+  --muted:#a2907a; --accent:#C8A24B; --seal:#B23A2E; --jade:#6FA287; }
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--text);
+  font:300 17px/1.7 'Mulish',system-ui,sans-serif; }
+.wrap { max-width:960px; margin:0 auto; padding:0 24px; }
+header { display:flex; justify-content:space-between; align-items:center;
+  padding:28px 0; }
+header img { height:56px; }
+nav a { color:var(--muted); text-decoration:none; margin-left:22px;
+  font-size:.85rem; font-weight:600; }
+nav a:hover { color:var(--accent); }
+h1,h2 { font-family:'Fraunces',Georgia,serif; font-weight:500; }
+.hero { display:grid; grid-template-columns:1.1fr .9fr; gap:44px;
+  align-items:center; padding:48px 0 64px; }
+@media (max-width:760px){ .hero{grid-template-columns:1fr;} }
+.hero h1 { font-size:clamp(2rem,5vw,3.1rem); line-height:1.15; }
+.hero h1 em { font-style:italic; color:var(--accent); }
+.hero p { color:var(--muted); margin:18px 0 26px; max-width:46ch; }
+.hero img { width:100%; border-radius:18px; }
+.badge { display:inline-block; background:var(--accent); color:var(--bg);
+  font-weight:700; padding:14px 28px; border-radius:999px;
+  text-decoration:none; }
+.badge.soon { background:var(--surface); color:var(--muted);
+  border:1px solid var(--line); }
+.badges { display:flex; gap:12px; flex-wrap:wrap; }
+.pills { display:flex; gap:10px; flex-wrap:wrap; margin-top:22px; }
+.pill { border:1px solid var(--line); border-radius:999px;
+  padding:6px 14px; font-size:.8rem; color:var(--muted); }
+section { padding:56px 0; border-top:1px solid var(--line); }
+section h2 { font-size:clamp(1.5rem,3.4vw,2.1rem); margin-bottom:28px; }
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+@media (max-width:760px){ .cards{grid-template-columns:1fr;} }
+.card h3 { font-family:'Fraunces',Georgia,serif; font-weight:500;
+  font-size:1.15rem; color:var(--accent); margin-bottom:10px; }
+.card p { color:var(--muted); font-size:.95rem; }
+.prose p { color:var(--muted); max-width:70ch; margin-bottom:16px; }
+.langs { color:var(--muted); font-size:.95rem; max-width:70ch; }
+.langs b { color:var(--text); font-weight:600; }
+.seal { color:var(--seal); font-weight:700; }
+footer { border-top:1px solid var(--line); padding:36px 0 60px;
+  color:var(--muted); font-size:.85rem; }
+footer a { color:var(--muted); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Gilsung",
+  "alternateName": "Gilsung: BaZi Chart & Match",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "iOS 18, Android 14",
+  "url": "https://gilsung.app/",
+  "description": "A private Four Pillars of Destiny app. BaZi, Korean saju and Japanese Shichu Suimei: your chart, day master, ten gods, luck pillars, compatibility and auspicious-day guidance, computed on your own device. No account, no fortune-teller upsell, no subscription.",
+  "inLanguage": ["en", "ko", "ja", "zh-Hans", "zh-Hant", "th", "id"],
+  "publisher": { "@type": "Organization", "name": "Pacefyx, Inc." },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD",
+              "description": "Your chart and daily reading are free. Optional one-time purchases, no subscription." }
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="img/wordmark.png" alt="Gilsung">
+    <nav>
+      <a href="faq.html">FAQ</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Your four pillars, <em>computed right</em>, on your phone.</h1>
+      <p>
+        Gilsung reads your BaZi with the calendar math the tradition actually
+        uses: the year turns at lichun, months follow the solar terms, hours run
+        on true local solar time, and a birth after 23:00 rolls the day pillar
+        the way it should. Your chart and your daily reading are free.
+      </p>
+      <div class="badges">
+        <a class="badge soon" href="#">App Store &middot; Aug 2026</a>
+        <a class="badge soon" href="#">Google Play &middot; Aug 2026</a>
+      </div>
+      <div class="pills">
+        <span class="pill">No sign-up</span>
+        <span class="pill">No fortune-teller upsell</span>
+        <span class="pill">No subscription</span>
+        <span class="pill">Works offline</span>
+      </div>
+    </div>
+    <img src="img/sky-today.png" alt="Gilsung's sky view in Japanese, naming the lunar mansions 室, 危, 虚, 女 and 牛 with their readings">
+  </div>
+
+  <section>
+    <h2>A chart, not a marketplace</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Nobody is waiting to sell you a reading</h3>
+        <p>
+          No fortune tellers, no per-minute billing, no coins, no hearts, nothing
+          to recharge. And no talismans: Gilsung never sells you a fix for
+          something it just told you to worry about. That structure is the
+          whole business model of most apps in this category, and it is the
+          one thing this app will not do.
+        </p>
+      </div>
+      <div class="card">
+        <h3>The calendar math done properly</h3>
+        <p>
+          The BaZi year begins at lichun, not at Lunar New Year, and the two
+          are commonly confused. Months follow the sectional solar terms. The
+          hour pillar uses true local solar time rather than clock time, and
+          the late-zi boundary at 23:00 is handled. Your chart names the
+          pillars, stems and branches every reading came from.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Hard seasons read as tempo</h3>
+        <p>
+          A demanding luck pillar is named as demanding, because a reading that
+          only ever says pleasant things is not reading your chart. But it is
+          told as pace and as what a season asks of you, never as doom, never
+          as a verdict on you, and never followed by something to buy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <h2>Your birth details stay on your phone.</h2>
+    <p>
+      There is no account and no server of ours. Your birth date, time and
+      place, the people you save, your chart and every reading built from it are
+      created and kept on your device. We do not collect them, which means we
+      cannot read them, search them, sell them or lose them. If you keep a
+      device backup, that backup is yours and may include them, which the
+      <a href="privacy.html" style="color:var(--accent)">privacy policy</a> says
+      plainly rather than overstating the claim.
+    </p>
+    <p>
+      The App Store privacy label reads "Data Not Collected," because there is
+      nothing for us to collect. In this category privacy has started to become
+      something competitors advertise. It is worth asking whether an app that
+      says it can also show you where the data would have gone.
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>Free every day. The rest, only if you want it.</h2>
+    <p>
+      Your four pillars and the day master reading are free. Your daily reading,
+      built from your actual chart rather than from your animal sign, is free.
+      Ten gods, hidden stems and your luck pillars are there to read.
+    </p>
+    <p>
+      When you want more it stays simple. Compatibility between two people is a
+      small one-time purchase, read in two layers: the inner match from your day
+      pillars and the outer match from your year pillars. Auspicious-day
+      guidance is there when you are planning something. No subscription, no
+      coins, no wallet, nothing to cancel.
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>One tradition, four of its own names</h2>
+    <p class="langs">
+      <b>BaZi</b> 八字 &middot; <b>saju</b> 사주 &middot;
+      <b>Shichu Suimei</b> 四柱推命 &middot; <b>Empat Pilar</b> &middot;
+      <b>โป๊ยยี่</b>
+    </p>
+    <p style="margin-top:16px">
+      Gilsung is written in <b>English, 한국어, 日本語, 简体中文, 繁體中文,
+      ไทย</b> and <b>Bahasa Indonesia</b>, and each one uses its own tradition's
+      vocabulary rather than a translation of the Chinese. Japanese readers get
+      日干 and 通変星, not 日主 and 十神. Korean readers get 일간 and 십성.
+      Traditional Chinese is written for Taiwan and Hong Kong, not converted
+      character by character from Simplified.
+    </p>
+    <p>
+      The name is <b class="seal">吉星</b>, the auspicious star: a real term in
+      命理 for the favourable stars in a chart, and the idiom 吉星高照, under a
+      lucky star. It was the unanimous pick of four independent native readers.
+      It also states the app's own rule, which is that a chart is never read as
+      doom.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2026 Gilsung, published by Pacefyx, Inc. For reflection, not prediction.
+    Gilsung gives no medical, legal, financial or other professional advice, and
+    sells no remedies.
+    <br><br>
+    <a href="support.html">Support</a> &nbsp;&middot;&nbsp;
+    <a href="privacy.html">Privacy policy</a> &nbsp;&middot;&nbsp;
+    <a href="terms.html">Terms of use</a> &nbsp;&middot;&nbsp;
+    <a href="credits.html">Credits</a>
+  </footer>
+
+</div>
+</body>
+</html>

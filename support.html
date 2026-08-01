@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gilsung support: restore purchases, year and hour pillars, deleting data</title>
+<meta name="description" content="Help with Gilsung: restoring purchases, why a year or hour pillar may differ from another app (lichun, true solar time, the 23:00 boundary), and deleting your data.">
+<link rel="canonical" href="https://gilsung.app/support.html">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#14100C">
+<link rel="stylesheet" href="fonts.css">
+<style>
+:root { --bg:#14100C; --surface:#241c14; --line:#4a3a26; --text:#f2e8d5;
+  --muted:#a2907a; --accent:#C8A24B; --seal:#B23A2E; }
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--text);
+  font:300 17px/1.7 'Mulish',system-ui,sans-serif; }
+.wrap { max-width:800px; margin:0 auto; padding:0 24px; }
+header { display:flex; justify-content:space-between; align-items:center;
+  padding:28px 0; }
+header img { height:50px; }
+nav a { color:var(--muted); text-decoration:none; margin-left:22px;
+  font-size:.85rem; font-weight:600; }
+nav a:hover { color:var(--accent); }
+h1 { font-family:'Fraunces',Georgia,serif; font-weight:500;
+  font-size:clamp(1.8rem,4vw,2.6rem); margin:20px 0 34px; }
+h2 { font-family:'Fraunces',Georgia,serif; font-weight:500;
+  font-size:1.18rem; color:var(--accent); margin:34px 0 10px; }
+p { color:var(--muted); margin-bottom:14px; }
+a { color:var(--accent); }
+footer { border-top:1px solid var(--line); margin-top:56px;
+  padding:32px 0 60px; color:var(--muted); font-size:.85rem; }
+footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <a href="index.html"><img src="img/wordmark.png" alt="Gilsung"></a>
+    <nav>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <h1>Support</h1>
+
+  <p>Email <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>.</p>
+  <p>Common questions first:</p>
+
+  <h2>I bought something on one device. How do I get it on another?</h2>
+  <p>
+    Open Settings inside Gilsung and tap "Restore purchases" on any device signed
+    into the same Apple Account. There is no Gilsung account to sign into, so the
+    store account is the only thing that carries a purchase.
+  </p>
+
+  <h2>My year pillar is different from another app's.</h2>
+  <p>
+    Almost always the year boundary. The BaZi year turns at <b>lichun</b>, around
+    4 February, not at Lunar New Year. An app that uses Lunar New Year will give a
+    different year pillar to anyone born between the two dates. Gilsung uses
+    lichun, which is what the tradition uses.
+  </p>
+
+  <h2>My hour pillar is different.</h2>
+  <p>
+    Two likely reasons. Gilsung uses <b>true local solar time</b> rather than
+    clock time, so a birth far from the meridian of its time zone can sit in a
+    different hour branch than a clock-time calculation gives. And a birth after
+    <b>23:00</b> is in the late-zi hour, which rolls the day pillar to the next
+    day. Both are stated in the chart so you can see which applied.
+  </p>
+
+  <h2>Why did a reading say it was unavailable?</h2>
+  <p>
+    Tailored readings need a recent phone. On older devices Gilsung still
+    computes and shows your full chart, pillars, ten gods and luck pillars; it
+    just will not write the prose. Either way your information stays on your
+    phone.
+  </p>
+
+  <h2>How do I delete my data?</h2>
+  <p>
+    Settings, then "Start over," erases everything: your chart, saved people, and
+    everything the app has tailored to you. Deleting the app does the same. Your
+    information was only ever on your phone, so that is all it takes.
+  </p>
+
+  <h2>Can I move my charts to a new phone?</h2>
+  <p>
+    Yes. Gilsung's data moves with a standard phone-to-phone migration or a
+    device backup, because it lives in the app's local storage the way your
+    photos do. There is no account to sign into.
+  </p>
+
+  <h2>I found a bug, or the math looks off.</h2>
+  <p>
+    We take the math personally; the engine has its own solar-term and sexagenary
+    tables and is tested against them. Email
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a> with your device
+    model and a screenshot, and if it involves a chart, the birth date, time and
+    place you used, plus the time zone.
+  </p>
+
+  <footer>
+    &copy; 2026 Gilsung, published by Pacefyx, Inc.
+    <br><br>
+    <a href="index.html">Home</a> &nbsp;&middot;&nbsp;
+    <a href="support.html">Support</a> &nbsp;&middot;&nbsp;
+    <a href="privacy.html">Privacy</a> &nbsp;&middot;&nbsp;
+    <a href="terms.html">Terms</a> &nbsp;&middot;&nbsp;
+    <a href="credits.html">Credits</a>
+  </footer>
+
+</div>
+</body>
+</html>
