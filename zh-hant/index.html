@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gilsung:私密的八字命盤 App,無廣告</title>
+<meta name="description" content="在你自己的裝置上查看八字(四柱)命盤:日主、大運、合婚一應俱全。免帳號,無廣告,不訂閱。支援 7 種語言。">
+<link rel="canonical" href="https://gilsung.app/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://gilsung.app/">
+<link rel="alternate" hreflang="en" href="https://gilsung.app/">
+<link rel="alternate" hreflang="ja" href="https://gilsung.app/ja/">
+<link rel="alternate" hreflang="ko" href="https://gilsung.app/ko/">
+<link rel="alternate" hreflang="zh-Hans" href="https://gilsung.app/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://gilsung.app/zh-hant/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#14100C">
+<meta name="author" content="Pacefyx, Inc.">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="Gilsung">
+<meta property="og:url" content="https://gilsung.app/zh-hant/">
+<meta property="og:title" content="Gilsung:私密的八字命盤 App,無廣告">
+<meta property="og:description" content="你的四柱命盤,用這門傳統真正的曆法算法在手機上算出。日主、大運、合婚一目瞭然。免帳號,沒有老師推銷解讀。">
+<meta property="og:image" content="https://gilsung.app/img/sky-today.png">
+<meta property="og:image:alt" content="以日文顯示的 Gilsung 星空畫面,標出二十八宿中的室、危、虛、女、牛及其讀音">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gilsung:私密的八字命盤 App,無廣告">
+<meta name="twitter:description" content="你的四柱命盤,在手機上算出。日主、大運、合婚一目瞭然。免帳號,無廣告,不訂閱。">
+<meta name="twitter:image" content="https://gilsung.app/img/sky-today.png">
+<link rel="stylesheet" href="/fonts.css">
+<style>
+:root { --bg:#14100C; --surface:#241c14; --line:#4a3a26; --text:#f2e8d5;
+  --muted:#a2907a; --accent:#C8A24B; --seal:#B23A2E; --jade:#6FA287; }
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--text);
+  font:300 17px/1.7 'Mulish',system-ui,sans-serif; }
+.wrap { max-width:960px; margin:0 auto; padding:0 24px; }
+header { display:flex; justify-content:space-between; align-items:center;
+  padding:28px 0; }
+header img { height:56px; }
+nav a { color:var(--muted); text-decoration:none; margin-left:22px;
+  font-size:.85rem; font-weight:600; }
+nav a:hover { color:var(--accent); }
+h1,h2 { font-family:'Fraunces',Georgia,serif; font-weight:500; }
+.hero { display:grid; grid-template-columns:1.1fr .9fr; gap:44px;
+  align-items:center; padding:48px 0 64px; }
+@media (max-width:760px){ .hero{grid-template-columns:1fr;} }
+.hero h1 { font-size:clamp(2rem,5vw,3.1rem); line-height:1.15; }
+.hero h1 em { font-style:italic; color:var(--accent); }
+.hero p { color:var(--muted); margin:18px 0 26px; max-width:46ch; }
+.hero img { width:100%; border-radius:18px; }
+.badge { display:inline-block; background:var(--accent); color:var(--bg);
+  font-weight:700; padding:14px 28px; border-radius:999px;
+  text-decoration:none; }
+.badge.soon { background:var(--surface); color:var(--muted);
+  border:1px solid var(--line); }
+.badges { display:flex; gap:12px; flex-wrap:wrap; }
+.pills { display:flex; gap:10px; flex-wrap:wrap; margin-top:22px; }
+.pill { border:1px solid var(--line); border-radius:999px;
+  padding:6px 14px; font-size:.8rem; color:var(--muted); }
+section { padding:56px 0; border-top:1px solid var(--line); }
+section h2 { font-size:clamp(1.5rem,3.4vw,2.1rem); margin-bottom:28px; }
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+@media (max-width:760px){ .cards{grid-template-columns:1fr;} }
+.card h3 { font-family:'Fraunces',Georgia,serif; font-weight:500;
+  font-size:1.15rem; color:var(--accent); margin-bottom:10px; }
+.card p { color:var(--muted); font-size:.95rem; }
+.prose p { color:var(--muted); max-width:70ch; margin-bottom:16px; }
+.langs { color:var(--muted); font-size:.95rem; max-width:70ch; }
+.langs b { color:var(--text); font-weight:600; }
+.seal { color:var(--seal); font-weight:700; }
+footer { border-top:1px solid var(--line); padding:36px 0 60px;
+  color:var(--muted); font-size:.85rem; }
+footer a { color:var(--muted); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Gilsung",
+  "alternateName": "Gilsung: BaZi Chart & Match",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "iOS 18, Android 14",
+  "url": "https://gilsung.app/",
+  "description": "一款私密的四柱命理 App。中國的八字、韓國的사주(saju)與日本的四柱推命:你的命盤、日主、十神、大運、合婚與擇日指引,都在你自己的裝置上算出。免帳號,沒有老師推銷解讀,不訂閱。",
+  "inLanguage": ["en", "ko", "ja", "zh-Hans", "zh-Hant", "th", "id"],
+  "publisher": { "@type": "Organization", "name": "Pacefyx, Inc." },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD",
+              "description": "你的命盤與每日運勢都是免費的。可選購買一次性項目,不訂閱。" }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/* Language switcher. Sits under the nav, wraps freely, never a dropdown:
+   a reader who cannot read the current page cannot be asked to operate one. */
+.langbar { border-top:1px solid var(--line); padding:14px 0 0; margin-top:4px;
+  font-size:.78rem; line-height:2; }
+.langbar a { color:var(--muted); text-decoration:none; margin-right:14px;
+  white-space:nowrap; }
+.langbar a:hover { color:var(--accent); text-decoration:underline; }
+.langbar a[aria-current="true"] { color:var(--accent); font-weight:700; }
+[dir="rtl"] .langbar a { margin-right:0; margin-left:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="/img/wordmark.png" alt="Gilsung">
+    <nav>
+      <a href="/faq.html">常見問題</a>
+      <a href="/support.html">支援</a>
+      <a href="/privacy.html">隱私</a>
+      <a href="/terms.html">條款</a>
+    </nav>
+  </header>
+
+<div class="langbar">
+  <a href="https://gilsung.app/" lang="en">English</a>
+  <a href="https://gilsung.app/ja/" lang="ja">日本語</a>
+  <a href="https://gilsung.app/ko/" lang="ko">한국어</a>
+  <a href="https://gilsung.app/zh-hans/" lang="zh-Hans">简体中文</a>
+  <a href="https://gilsung.app/zh-hant/" lang="zh-Hant" aria-current="true">繁體中文</a>
+</div>
+
+  <div class="hero">
+    <div>
+      <h1>你的四柱命盤,<em>算得道地</em>,就在你的手機裡。</h1>
+      <p>
+        Gilsung 依照這門傳統真正使用的曆法算法來論你的八字:一年從立春起算,
+        月依節氣而定,時辰採真太陽時,23 點之後出生,日柱也會依照夜子時的規矩
+        正確順延。你的命盤與每日運勢都是免費的。
+      </p>
+      <div class="badges">
+        <a class="badge soon" href="#">App Store &middot; 2026 年 8 月</a>
+        <a class="badge soon" href="#">Google Play &middot; 2026 年 8 月</a>
+      </div>
+      <div class="pills">
+        <span class="pill">無需註冊</span>
+        <span class="pill">無老師推銷</span>
+        <span class="pill">不訂閱</span>
+        <span class="pill">離線可用</span>
+      </div>
+    </div>
+    <img src="/img/sky-today.png" alt="以日文顯示的 Gilsung 星空畫面,標出二十八宿中的室、危、虛、女、牛及其讀音">
+  </div>
+
+  <section>
+    <h2>是命盤,不是市集</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>沒有人等著要賣你解讀</h3>
+        <p>
+          沒有命理老師,沒有按分鐘計費,沒有虛擬幣,沒有愛心值,沒有什麼需要
+          儲值。也沒有符咒:Gilsung 絕不會先讓你擔心一件事,再回頭賣給你一個
+          化解的辦法。這套做法是這個類別裡多數應用程式的整套商業模式,也是
+          這款應用程式唯一不會做的事。
+        </p>
+      </div>
+      <div class="card">
+        <h3>把曆法算對</h3>
+        <p>
+          八字的一年從立春開始,不是從農曆新年,這兩者常被混為一談。月柱
+          依節氣而定。時柱用真太陽時,不是鐘錶時間,23 點起的夜子時規矩也
+          已經處理好。你的命盤會標明每一條解讀所依據的柱、天干與地支。
+        </p>
+      </div>
+      <div class="card">
+        <h3>難熬的季節,讀成節奏</h3>
+        <p>
+          吃力的大運,就說它吃力,因為只挑好話說的解讀,稱不上真的在讀你的
+          命盤。但它說的是節奏,是這一季對你的要求,絕不說成災禍,絕不對你
+          下判詞,後面也絕不會接著要你買什麼。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <h2>你的出生資料,留在你的手機裡。</h2>
+    <p>
+      沒有帳號,也沒有我們的伺服器。你的出生日期、時間與地點,你儲存的人物,
+      你的命盤,以及由此產生的每一條解讀,都在你的裝置上產生、留在你的裝置
+      上。我們不收集這些資料,也就無法讀取、搜尋、出售或弄丟它們。如果你保留
+      裝置備份,那份備份是你自己的,可能包含這些資料,
+      <a href="/privacy.html" style="color:var(--accent)">隱私政策</a>如實這樣
+      寫,不會把話說得比事實更滿。
+    </p>
+    <p>
+      App Store 的隱私標籤寫著「不收集資料」,因為根本沒有什麼可讓我們收集。
+      在這個類別裡,隱私正逐漸變成同業拿來宣傳的賣點。值得問一句:一款這樣
+      宣傳的應用程式,能不能也讓你看看,資料本來會流向哪裡。
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>每天都是免費的。其餘的,只在你想要的時候。</h2>
+    <p>
+      你的四柱與日主解讀都是免費的。你的每日運勢,是根據你真正的命盤算出來
+      的,不是根據生肖,同樣免費。十神、藏干與你的大運,隨時可以查看。
+    </p>
+    <p>
+      想要更多的時候,也一樣簡單。兩人合婚是一筆小額的一次性購買,分兩層來
+      讀:從日柱看的內層相合,從年柱看的外層相合。要籌劃什麼事的時候,還有
+      擇日指引可用。不訂閱,沒有虛擬幣,沒有錢包,沒有什麼需要取消。
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>同一個傳統,各自的四個名字</h2>
+    <p class="langs">
+      <b>BaZi</b> 八字 &middot; <b>saju</b> 사주 &middot;
+      <b>Shichu Suimei</b> 四柱推命 &middot; <b>Empat Pilar</b> &middot;
+      <b>โป๊ยยี่</b>
+    </p>
+    <p style="margin-top:16px">
+      Gilsung 提供 <b>English、한국어、日本語、简体中文、繁體中文、
+      ไทย</b> 和 <b>Bahasa Indonesia</b> 七種語言版本,每種語言用的都是自己
+      那套傳統的詞彙,不是把中文逐字譯過去。日語讀者看到的是日干與通變星,
+      不是日主與十神。韓語讀者看到的是일간與십신。繁體中文是專為台灣與香港
+      所寫,不是把簡體逐字轉換過去的。
+    </p>
+    <p>
+      這個名字是 <b class="seal">吉星</b>,吉利的星:命理裡確有其詞,指命盤
+      中帶來助力的星,也是成語吉星高照裡的那顆星。這是四位互不相識的母語
+      讀者一致選中的名字。它也說出了這款應用程式自己的規矩:命盤絕不讀成
+      災禍。
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2026 Gilsung,由 Pacefyx, Inc. 出版發行。為了自我省思,不為預測。
+    Gilsung 不提供醫療、法律、財務或其他專業建議,也不出售任何化解之物。
+    <br><br>
+    <a href="/support.html">支援</a> &nbsp;&middot;&nbsp;
+    <a href="/privacy.html">隱私政策</a> &nbsp;&middot;&nbsp;
+    <a href="/terms.html">使用條款</a> &nbsp;&middot;&nbsp;
+    <a href="/credits.html">鳴謝</a>
+  </footer>
+
+</div>
+</body>
+</html>

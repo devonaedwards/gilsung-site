@@ -22,6 +22,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://gilsung.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://gilsung.app/ko/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://gilsung.app/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://gilsung.app/zh-hant/"/>
   </url>
   <url><loc>https://gilsung.app/ko/</loc><lastmod>2026-07-31</lastmod><priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gilsung.app/"/>
@@ -29,6 +30,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://gilsung.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://gilsung.app/ko/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://gilsung.app/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://gilsung.app/zh-hant/"/>
   </url>
   <url><loc>https://gilsung.app/zh-hans/</loc><lastmod>2026-07-31</lastmod><priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gilsung.app/"/>
@@ -36,5 +38,14 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://gilsung.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://gilsung.app/ko/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://gilsung.app/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://gilsung.app/zh-hant/"/>
+  </url>
+  <url><loc>https://gilsung.app/zh-hant/</loc><lastmod>2026-07-31</lastmod><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gilsung.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gilsung.app/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gilsung.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://gilsung.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://gilsung.app/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://gilsung.app/zh-hant/"/>
   </url>
 </urlset>
