@@ -39,6 +39,28 @@ footer { border-top:1px solid var(--line); margin-top:56px;
   padding:32px 0 60px; color:var(--muted); font-size:.85rem; }
 footer a { color:var(--muted); }
 </style>
+
+<style>
+/* Language switcher for the policy. Sections are VISIBLE by default and hidden
+   only once scripting confirms it can show one back: with JS off the reader
+   gets every language stacked, never an empty page. */
+.langpick { border:1px solid var(--line); border-radius:12px; padding:16px 18px;
+  margin:22px 0 30px; }
+.langpick p { font-size:.82rem; color:var(--muted); margin-bottom:10px; }
+.langpick a { color:var(--muted); text-decoration:none; font-size:.85rem;
+  margin-right:14px; line-height:2.1; white-space:nowrap; }
+.langpick a:hover { color:var(--accent); text-decoration:underline; }
+.langpick a[aria-current="true"] { color:var(--accent); font-weight:700; }
+.policy > h2.langhead { font-size:.8rem; color:var(--muted); letter-spacing:.08em;
+  text-transform:uppercase; margin-top:44px; }
+html.js .policy { display:none; }
+html.js .policy.on { display:block; }
+html.js .policy > h2.langhead { display:none; }
+[dir="rtl"] { text-align:right; }
+[dir="rtl"] ul { margin:0 20px 14px 0; }
+[dir="rtl"] th, [dir="rtl"] td { text-align:right; }
+</style>
+<script>document.documentElement.className += ' js';</script>
 </head>
 <body>
 <div class="wrap">
@@ -52,7 +74,19 @@ footer a { color:var(--muted); }
     </nav>
   </header>
 
-  <h1>Privacy policy</h1>
+<div class="langpick">
+  <a href="#en" data-lang="en" lang="en">English</a>
+  <a href="#id" data-lang="id" lang="id">Bahasa Indonesia</a>
+  <a href="#ja" data-lang="ja" lang="ja">日本語</a>
+  <a href="#ko" data-lang="ko" lang="ko">한국어</a>
+  <a href="#th" data-lang="th" lang="th">ไทย</a>
+  <a href="#zh-Hans" data-lang="zh-Hans" lang="zh-Hans">简体中文</a>
+  <a href="#zh-Hant" data-lang="zh-Hant" lang="zh-Hant">繁體中文</a>
+</div>
+
+<section class="policy" data-lang="en" lang="en">
+  <h2 class="langhead">English</h2>
+<h1>Privacy policy</h1>
   <p class="meta">
     Gilsung is published by Pacefyx, Inc. Privacy contact:
     <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>. Last updated July 2026.
@@ -267,8 +301,1324 @@ footer a { color:var(--muted); }
     contact emergency services for them. If someone is in immediate danger, use
     your local emergency number.
   </p>
+</section>
 
-  <footer>
+<section class="policy" data-lang="id" lang="id">
+  <h2 class="langhead">Bahasa Indonesia (Indonesian)</h2>
+<h1>Kebijakan privasi</h1>
+  <p class="meta">
+    Gilsung diterbitkan oleh Pacefyx, Inc. Kontak privasi:
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>. Terakhir diperbarui Juli 2026.
+  </p>
+
+  <h2>Ringkasnya</h2>
+  <p>
+    Gilsung tidak punya server pengembang, tidak punya sistem akun, tidak ada
+    analitik, tidak ada iklan dan tidak ada pelacak. Aplikasi ini tidak
+    melakukan panggilan jaringan apa pun kepada kami. Data kelahiranmu, bagan
+    Empat Pilar, orang yang kamu simpan dan pembacaanmu dibuat dan disimpan di
+    ponselmu, dan kami tidak pernah mengumpulkannya. Karena tidak ada salinan di
+    pihak kami, kami tidak bisa membaca, mencari atau menghapus isimu. Yang ada
+    di tanganmu adalah bagian-bagian yang bisa menyimpan salinan: cadangan
+    perangkatmu sendiri, toko aplikasi, email dukungan yang kamu pilih untuk
+    dikirim, dan apa pun yang kamu putuskan untuk dibagikan.
+  </p>
+
+  <h2>Apa itu Gilsung</h2>
+  <p>
+    Gilsung menghitung dan menampilkan isi Empat Pilar Nasib, yang dikenal
+    sebagai BaZi 八字, saju 사주 dan Shichuu Suimei 四柱推命: keempat pilar,
+    Sepuluh Dewa (十神), pilar keberuntungan, pilar tahunan, pembacaan kecocokan
+    dan panduan pemilihan hari. Semua ini untuk bahan refleksi. Ini bukan
+    nasihat medis, kesehatan jiwa, keuangan, hukum, perkawinan atau kedaruratan
+    yang profesional, dan bukan ramalan faktual. Gilsung tidak meresepkan
+    penangkal, jimat, azimat atau ritual apa pun, tidak mengklaim bisa
+    menyembuhkan, mencegah atau menjamin hasil apa pun, dan tidak pernah
+    menjatuhkan vonis lulus atau gagal atas seseorang maupun atas sepasang
+    orang.
+  </p>
+
+  <h2>Apa yang diproses aplikasi, dan di mana</h2>
+  <p>
+    Aplikasi hanya memproses apa yang kamu pilih untuk dimasukkan atau dibuat.
+    Persisnya bergantung pada fitur yang kamu pakai. Semuanya diproses di
+    perangkatmu.
+  </p>
+  <table>
+    <tr><th>Apa</th><th>Contoh</th></tr>
+    <tr><td>Data kelahiran dan tempat</td>
+        <td>Tanggal, jam dan tempat lahir; tempat yang kamu pilih; tempat keberadaanmu saat ini kalau kamu memakai fitur harian atau pemilihan hari yang bergantung pada posisimu. Jam dan tempat lahirmu menentukan Pilar Jam dan waktu surya sejati yang dipakai untuk menyusun bagan.</td></tr>
+    <tr><td>Orang dan kecocokan</td>
+        <td>Nama yang sifatnya opsional, orang yang kamu simpan, label hubungan, dan bagan kedua yang kamu masukkan untuk pembacaan kecocokan.</td></tr>
+    <tr><td>Pembacaan yang kamu simpan</td>
+        <td>Tafsir bagan, pembacaan pilar keberuntungan dan pilar tahunan, hasil pemilihan hari dan pembacaan yang tersimpan, semuanya disimpan secara lokal.</td></tr>
+    <tr><td>Kenang-kenangan dan berbagi</td>
+        <td>Teks atau gambar kenang-kenangan dan kartu berbagi yang kamu buat. Salinannya keluar dari perangkatmu hanya kalau kamu sendiri memilih untuk membagikan atau mengekspornya.</td></tr>
+    <tr><td>Pengaturan dan catatan lokal</td>
+        <td>Preferensi seperti bahasa dan tampilan, tanda persetujuan atas ketentuan hukum, pilihan pengingat, serta status pembelian atau hak akses yang tersimpan secara lokal.</td></tr>
+  </table>
+  <p>
+    Jam kelahiran, dan keterangan tentang pasangan yang sedang dipertimbangkan,
+    bisa mengungkap hal-hal sensitif tentang kamu atau tentang orang lain.
+    Mohon jangan memasukkan apa pun yang tidak ingin kamu simpan di ponselmu,
+    tidak ingin ikut masuk ke dalam cadangan, atau tidak ingin kamu bagikan
+    dengan sengaja. Orang dewasa yang memasukkan data tentang orang lain,
+    termasuk anggota keluarga, bertanggung jawab memastikan bahwa ia memang
+    berhak melakukannya.
+  </p>
+
+  <h2>Di mana pemrosesan itu terjadi</h2>
+  <p>
+    Aplikasi menghitung bagan, menyimpan isimu, menjalankan pemeriksaan
+    keamanannya dan menyusun pembacaanmu di perangkatmu. Tidak ada akun
+    pengembang, server pengembang, model awan, analitik, iklan, pelacak, maupun
+    panggilan model lewat jaringan.
+  </p>
+  <p>
+    Ini adalah pernyataan tentang apa yang dikumpulkan pengembang. Ini tidak
+    berarti bahwa salinan tidak mungkin ada di tempat lain: cadangan perangkat
+    yang kamu simpan, layanan sistem operasi, transaksi di toko aplikasi, atau
+    orang yang kamu kirimi, masing-masing bisa menyimpan salinan. Semua itu
+    dijelaskan di bawah.
+  </p>
+
+  <h2>Apa yang kami terima</h2>
+  <p>
+    Untuk isi yang dijelaskan di atas, kami tidak menerima apa pun. Kami tidak
+    memegang salinan di server, catatan akun, profil analitik maupun profil
+    iklan.
+  </p>
+  <p>
+    Dukungan adalah jalur terpisah dan sifatnya sukarela. Pengaturan membuka
+    email ke <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>, bukan
+    formulir di dalam aplikasi. Kalau kamu mengirim email kepada kami, penyedia
+    emailmu memberi kami alamatmu dan apa pun yang kamu pilih untuk disertakan.
+    Aplikasi tidak melampirkan bagan atau pembacaanmu ke email itu.
+  </p>
+
+  <h2>Toko aplikasi</h2>
+  <p>
+    Apple, dan Google di tempat Google Play tersedia, menjalankan sistem toko,
+    pembayaran, akun dan dukungan mereka sendiri. Mereka bisa memproses
+    informasi akun toko, pembelian, tanda terima, penagihan, pajak, perangkat,
+    kecurangan dan pengembalian dana berdasarkan ketentuan dan pemberitahuan
+    privasi mereka sendiri. Kami mungkin menerima informasi transaksi atau hak
+    akses yang terbatas, sebatas yang diperlukan agar sebuah pembelian bisa
+    dipakai di dalam aplikasi. Kami tidak menerima isi kelahiran, bagan,
+    pembacaan, kecocokan maupun kenang-kenanganmu lewat toko.
+    Lihat <a href="https://www.apple.com/legal/privacy/">Privasi Apple</a> dan
+    <a href="https://policies.google.com/privacy">Privasi Google</a>. Untuk
+    pembelian yang ditagih lewat toko, pakai jalur pengembalian dana milik toko
+    itu sendiri, dan hak konsumen yang wajib menurut hukum setempat tetap kamu
+    miliki.
+  </p>
+
+  <h2>Bagaimana pembacaanmu dibuat</h2>
+  <p>
+    Pembacaanmu disusun di perangkatmu, dari baganmu sendiri dan dari kumpulan
+    tulisan yang sudah kami siapkan dan kami tinjau sebelumnya. Tidak ada yang
+    ditulis saat kamu sedang memakai aplikasi, dan tidak ada yang kamu masukkan
+    dikirim kepada kami atau dipakai untuk melatih apa pun. Pembacaan adalah
+    bahan refleksi, bukan ramalan faktual dan bukan layanan medis, kesehatan
+    jiwa, keuangan, hukum, perkawinan atau kedaruratan yang profesional.
+  </p>
+
+  <h2>Menyimpan, menghapus, mencadangkan dan membagikan</h2>
+  <p>
+    Isimu tetap ada di ponselmu sampai kamu menyuntingnya atau menghapusnya,
+    memakai "Mulai dari awal" atau kontrol penghapusan lokal lainnya, atau
+    menghapus aplikasinya. Kontrol-kontrol itu menghapus isi aplikasi beserta
+    salinan turunannya yang ada di perangkat. Catatan pembelian lokal bisa tetap
+    disimpan supaya aplikasi mengenali apa yang sudah kamu miliki; catatan
+    pembelian milik toko tetap berada di toko.
+  </p>
+  <p>
+    Kalau kamu memakai cadangan perangkat, isimu bisa ikut tersimpan di
+    dalamnya. Cadangan itu dikendalikan olehmu dan oleh sistem operasi atau
+    penyedia cadanganmu, bukan oleh kami. Cadangan masih bisa menyimpan salinan
+    setelah aplikasinya dihapus, dan memulihkannya bisa memulihkan kembali
+    datamu. Kami tidak bisa mencari, mengubah atau menghapus cadanganmu. Untuk
+    menghapus data dari sebuah cadangan, kelola cadangan itu lewat perangkatmu
+    atau lewat penyedia cadanganmu.
+  </p>
+  <p>
+    Apa pun yang kamu bagikan (kartu berbagi, kenang-kenangan atau hasil ekspor)
+    berjalan atas arahanmu sendiri. Begitu kamu atau penerimanya menyebarkannya
+    ke tempat lain, kami tidak bisa menghapus salinan itu. Bagikan hanya kepada
+    orang yang kamu percaya.
+  </p>
+
+  <h2>Usia</h2>
+  <p>
+    Gilsung ditujukan untuk orang berusia 16 tahun ke atas. Orang dewasa boleh
+    memasukkan informasi tentang anggota keluarga, termasuk anak-anak, untuk
+    pembacaan kecocokan atau pembacaan keluarga. Mohon jangan memasukkan
+    informasi seorang anak kecuali kamu memang berwenang melakukannya.
+  </p>
+
+  <h2>Hakmu, dan cara memakainya</h2>
+  <p>
+    Bergantung pada tempat tinggalmu, kamu mungkin punya hak untuk mengakses,
+    memperbaiki, menghapus, membatasi atau menolak pemrosesan, atau menerima
+    salinan informasimu, hak untuk menarik persetujuan di mana persetujuan
+    itulah dasarnya, dan hak untuk mengadu kepada lembaga pengawas. Karena
+    Gilsung tidak punya sistem apa pun di sisi pengembang, cara utama untuk
+    memakai hak-hak ini
+    atas isi aplikasi adalah lewat perangkatmu sendiri:
+  </p>
+  <ul>
+    <li>Lihat atau sunting profil, tempat, orang dan pembacaanmu di dalam aplikasi.</li>
+    <li>Pakai "Mulai dari awal" atau kontrol hapus lokal yang berlaku untuk menghapus isi aplikasi.</li>
+    <li>Hapus aplikasinya, lalu secara terpisah kelola salinan di perangkat atau di cadangan yang tidak lagi kamu inginkan.</li>
+    <li>Pakai kontrol akun, pembelian, tanda terima dan pengembalian dana milik toko untuk apa pun yang dipegang Apple atau Google.</li>
+  </ul>
+  <p>
+    Kamu juga bisa menghubungi <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>.
+    Kami akan memberi tahu apakah kami memang memegang informasi yang kamu minta.
+    Kalau kami tidak memegang salinannya, kami akan mengatakannya terus terang
+    dan menunjukkan kontrol di perangkat, di toko, di email atau di cadangan
+    yang bisa menindaklanjutinya.
+  </p>
+
+  <h2>Wilayahmu</h2>
+  <p>
+    Kebijakan ini ditulis supaya berlaku di mana pun Gilsung tersedia. Sebagian
+    wilayah menambahkan hak dan jalur kontak tersendiri, yang muncul pada versi
+    yang ditampilkan untuk etalase toko dan pasarmu:
+  </p>
+  <ul>
+    <li>
+      <b>Korea.</b> Berdasarkan Undang-Undang Perlindungan Informasi Pribadi
+      (Personal Information Protection Act, PIPA) kamu punya hak untuk diberi
+      tahu, untuk mengakses, memperbaiki, menghapus dan menghentikan sementara
+      pemrosesan informasi pribadimu, serta untuk meminta mediasi sengketa.
+      Gilsung memproses informasi pribadimu sepenuhnya di perangkatmu sendiri
+      dan kami tidak menerima satu pun darinya, jadi hak-hak itu dijalankan
+      lewat kontrol di dalam aplikasi yang disebutkan di atas. Untuk sebuah
+      permintaan atau pengaduan, tulislah ke
+      <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>; kami akan
+      menjawab dan mengatakan terus terang kalau data yang kamu maksud memang
+      tidak pernah kami pegang.
+    </li>
+    <li>
+      <b>Jepang.</b> Berdasarkan Undang-Undang Perlindungan Informasi Pribadi
+      (Act on the Protection of Personal Information, APPI) kamu boleh meminta
+      pengungkapan, perbaikan, penghentian penggunaan atau penghapusan data
+      pribadi yang disimpan. Kami tidak menyimpan satu pun: baganmu dan
+      pembacaanmu tetap ada di perangkatmu dan tidak pernah dikirimkan kepada
+      kami, jadi tidak ada data pribadi tersimpan di pihak pengembang yang bisa
+      diungkapkan atau dihapus.
+    </li>
+    <li>
+      <b>Taiwan, Hong Kong dan etalase toko berbahasa Tionghoa lainnya.</b>
+      Hukum data pribadi setempat memberimu hak akses, perbaikan dan penghapusan
+      terhadap pihak yang mengumpulkan atau memegang datamu. Kami tidak
+      mengumpulkan maupun memegang satu pun isi aplikasimu, jadi hak-hak itu
+      dijalankan di perangkatmu dan, untuk pembelian, lewat toko aplikasi.
+    </li>
+    <li>
+      <b>Wilayah Ekonomi Eropa, Britania Raya dan Swiss.</b> Kamu punya hak-hak
+      perlindungan data yang dijelaskan di atas. Karena kami tidak menjalankan
+      server pengembang dan tidak menerima satu pun isi aplikasimu, sebagian
+      besar hak itu dijalankan di perangkatmu atau lewat toko aplikasi. Versi
+      untuk pasarmu menyebutkan pihak yang bertanggung jawab, perwakilannya bila
+      ada, dan lembaga pengawas setempatmu.
+    </li>
+    <li>
+      <b>Amerika Serikat, termasuk California.</b> Kami tidak menjual
+      informasimu, tidak membagikannya untuk iklan perilaku lintas konteks, dan
+      tidak memakainya untuk memprofilkanmu demi pengambilan keputusan. Tidak
+      ada server pengembang yang memegang isi aplikasimu.
+    </li>
+    <li>
+      <b>Wilayah lain.</b> Kalau hukum setempat memberikan hak tambahan atau
+      menunjuk lembaga pengaduan, versi kebijakan ini untuk pasar tersebut
+      menyebutkan atau menautkannya. Kamu tetap bisa mengadu kepada lembaga
+      setempatmu meskipun kami tidak memegang salinan isi aplikasimu.
+    </li>
+  </ul>
+
+  <h2>Kontak dan keadaan darurat</h2>
+  <p>
+    Untuk pertanyaan soal privasi, kirim email ke
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>. Mohon jangan
+    memakai alamat ini untuk melaporkan keadaan darurat yang sedang berlangsung.
+    Aplikasi ini tidak memantau penggunanya dan tidak menghubungi layanan
+    darurat untuk mereka. Kalau ada orang yang sedang dalam bahaya langsung,
+    hubungi nomor darurat setempat.
+  </p>
+</section>
+
+<section class="policy" data-lang="ja" lang="ja">
+  <h2 class="langhead">日本語 (Japanese)</h2>
+<h1>プライバシーポリシー</h1>
+  <p class="meta">
+    Gilsung の発行元は Pacefyx, Inc. です。プライバシーに関するお問い合わせ先:
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>。最終更新は 2026年7月です。
+  </p>
+
+  <h2>要点</h2>
+  <p>
+    Gilsung には、開発者のサーバーも、アカウントの仕組みも、解析も、広告も、
+    トラッカーもありません。私たちに向けたネットワーク通信は一切行いません。
+    あなたの生まれの情報、命式、保存した相手、リーディングは、あなたの
+    スマートフォンの中で作られ、その中に保たれます。私たちがそれらを収集する
+    ことはありません。私たちの側に複製が存在しないため、あなたの内容を読むことも、
+    検索することも、削除することもできません。複製を持ちうる部分は、あなたが
+    管理します。ご自身の端末のバックアップ、アプリストア、あなたが送ることを
+    選んだサポートへのメール、そしてあなたが共有すると決めたものです。
+  </p>
+
+  <h2>Gilsung とは</h2>
+  <p>
+    Gilsung は、中国では八字、韓国では사주、日本では四柱推命と呼ばれる体系の
+    内容を計算して表示します。四つの柱、通変星、大運、年運、相性のリーディング、
+    そして日取りの案内です。これは省察のためのものです。医療、心の健康、金銭、
+    法律、婚姻、緊急時に関する専門的な助言ではなく、事実としての予測でも
+    ありません。Gilsung は開運法もお守りも護符も儀式も示さず、何かを治す、防ぐ、
+    結果を保証するといった主張は一切せず、人についても相性についても合否の判定を
+    下すことはありません。
+  </p>
+
+  <h2>アプリが扱うもの、そしてそれがどこで行われるか</h2>
+  <p>
+    アプリが扱うのは、あなたが入力するか作成することを選んだものだけです。実際に
+    どれが対象になるかは、使う機能によって変わります。そのすべてが、あなたの端末の
+    中で処理されます。
+  </p>
+  <table>
+    <tr><th>種類</th><th>例</th></tr>
+    <tr><td>生まれと場所の情報</td>
+        <td>生年月日、出生時刻、出生地。あなたが選んだ場所。現在地に応じて働く毎日の機能や日取りの機能を使うときの、あなたの現在地。出生時刻と出生地は、時柱と、命式を組み立てるもとになる真太陽時を決めます。</td></tr>
+    <tr><td>人と相性</td>
+        <td>任意で入れる名前、保存した相手、関係の呼び名、そして相性のリーディングのために入力するもう一つの命式。</td></tr>
+    <tr><td>保存するリーディング</td>
+        <td>命式の読み解き、大運と年運のリーディング、日取りの結果、保存したリーディング。いずれも端末の中に保たれます。</td></tr>
+    <tr><td>記念カードと共有</td>
+        <td>あなたが作る記念カードや共有カードの文章と画像。その複製が端末の外に出るのは、あなたが共有または書き出しを選んだときだけです。</td></tr>
+    <tr><td>設定と端末内の記録</td>
+        <td>言語や見た目といった設定、法的な事項を確認したという記録、リマインダーの選択、そして端末内の購入や利用権の状態。</td></tr>
+  </table>
+  <p>
+    出生時刻や、相性を見ようとする相手についての情報は、あなた自身や他の人の
+    繊細な事柄を映し出すことがあります。スマートフォンの中に保たれること、
+    バックアップに含まれること、あるいは自分の意思で共有することを望まない情報は、
+    入力しないでください。家族を含め、他の人についての情報を入力する成人の方は、
+    そうする権利があることについて自ら責任を負います。
+  </p>
+
+  <h2>処理が行われる場所</h2>
+  <p>
+    アプリは、命式の計算、あなたの内容の保存、安全のための確認、そしてリーディングの
+    組み立てを、あなたの端末の中で行います。開発者のアカウントも、開発者のサーバーも、
+    クラウド上のモデルも、解析も、広告も、トラッカーも、ネットワーク越しのモデルの
+    呼び出しもありません。
+  </p>
+  <p>
+    これは、開発者が何を収集するかについての説明です。ほかの場所に複製が存在しえない、
+    という意味ではありません。あなたが取っている端末のバックアップ、
+    オペレーティングシステムのサービス、アプリストアでの取引、あなたが共有した相手は、
+    それぞれ複製を持ちうるものです。これらについては以下で説明します。
+  </p>
+
+  <h2>私たちが受け取るもの</h2>
+  <p>
+    上に挙げた内容について、私たちが受け取るものは何もありません。サーバー上の複製も、
+    アカウントの記録も、解析のためのプロファイルも、広告のためのプロファイルも
+    保持していません。
+  </p>
+  <p>
+    サポートは、これとは別の、任意の経路です。設定画面からは、アプリ内のフォームでは
+    なく、<a href="mailto:hello@gilsung.app">hello@gilsung.app</a> 宛てのメールが
+    開きます。メールをくださった場合、あなたのメールの提供元を通じて、あなたの
+    アドレスと、あなたが書き添えることを選んだ内容が私たちに届きます。アプリが
+    そのメールに命式やリーディングを添えることはありません。
+  </p>
+
+  <h2>アプリストア</h2>
+  <p>
+    Apple と、Google Play が提供されている地域では Google が、それぞれ自社のストア、
+    決済、アカウント、サポートの仕組みを運営しています。これらの事業者は、自社の
+    規約とプライバシーに関する通知に基づいて、ストアのアカウント、購入、レシート、
+    請求、税、端末、不正利用、返金に関する情報を扱うことがあります。私たちは、
+    購入したものをアプリで利用できるようにするために必要な範囲で、取引や利用権に
+    関する限られた情報を受け取ることがあります。ストアを通じて、あなたの生まれの
+    情報、命式、リーディング、相性、記念カードの内容を受け取ることはありません。
+    <a href="https://www.apple.com/legal/privacy/">Apple のプライバシーポリシー</a>と
+    <a href="https://policies.google.com/privacy">Google のプライバシーポリシー</a>を
+    ご覧ください。ストアで課金された購入の返金には、そのストア自身の返金の手続きを
+    ご利用ください。お住まいの地域の法律で必ず認められている消費者としての権利は、
+    そのまま保たれます。
+  </p>
+
+  <h2>リーディングがどのように作られるか</h2>
+  <p>
+    あなたのリーディングは、あなたの端末の中で、あなた自身の命式と、私たちが
+    あらかじめ用意して確かめておいた文章の集まりから組み立てられます。あなたが
+    アプリを使っている最中に文章が書かれることはなく、あなたが入力したものが
+    私たちに送られることも、何かの学習に使われることもありません。リーディングは
+    省察のためのものであり、事実としての予測ではなく、医療、心の健康、金銭、法律、
+    婚姻、緊急時に関する専門的なサービスでもありません。
+  </p>
+
+  <h2>保存、削除、バックアップ、共有</h2>
+  <p>
+    あなたの内容は、あなたがそれを編集または削除するか、「最初からやり直す」など
+    端末内の削除の操作を使うか、アプリを削除するまで、スマートフォンの中に
+    とどまります。これらの操作は、アプリの内容と、そこから端末内に作られた複製を
+    取り除きます。アプリが、あなたが持っているものを判別できるように、端末内の
+    購入記録は残ることがあります。ストア側の購入記録はストアに残ります。
+  </p>
+  <p>
+    端末のバックアップを使っている場合、あなたの内容がそこに含まれることがあります。
+    バックアップを管理するのはあなたと、オペレーティングシステムまたはバックアップの
+    提供元であって、私たちではありません。アプリを削除した後も、バックアップが複製を
+    保持していることがあり、そこから復元すると、あなたのデータが戻ることがあります。
+    私たちは、あなたのバックアップを検索することも、変更することも、消去することも
+    できません。バックアップからデータを取り除くには、お使いの端末またはバックアップの
+    提供元で、そのバックアップを管理してください。
+  </p>
+  <p>
+    あなたが共有するもの(共有カード、記念カード、書き出したもの)は、いずれも
+    あなたの操作によるものです。あなたや受け取った人がそれをほかの場所へ共有した
+    後は、私たちにその複製を削除することはできません。信頼できる相手にだけ共有して
+    ください。
+  </p>
+
+  <h2>年齢</h2>
+  <p>
+    Gilsung は 16 歳以上の方に向けたものです。成人の方は、相性や家族のリーディングの
+    ために、子どもを含む家族の情報を入力してかまいません。そうする権限がない場合は、
+    子どもの情報を入力しないでください。
+  </p>
+
+  <h2>あなたの権利と、その使い方</h2>
+  <p>
+    お住まいの地域によっては、あなたの情報について、開示を求める、訂正する、削除する、
+    利用を制限する、利用に異議を述べる、あるいはその複製を受け取る権利、同意を根拠と
+    している場合に同意を撤回する権利、そして監督機関に苦情を申し立てる権利が
+    認められていることがあります。Gilsung には開発者側のバックエンドがないため、
+    アプリ内の内容についてこれらの権利を行使する主な方法は、あなたの端末の上に
+    あります。
+  </p>
+  <ul>
+    <li>アプリの中で、プロフィール、場所、人、リーディングを見る、または編集する。</li>
+    <li>「最初からやり直す」など、その場面に応じた端末内の削除の操作を使って、アプリの内容を取り除く。</li>
+    <li>アプリを削除し、必要がなくなった端末内の複製やバックアップの複製は、それとは別に管理する。</li>
+    <li>Apple または Google が保持しているものについては、ストアのアカウント、購入、レシート、返金の操作を使う。</li>
+  </ul>
+  <p>
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a> にご連絡いただくことも
+    できます。ご請求の対象となる情報を私たちが保持しているかどうかは、お伝えします。
+    複製を保持していない場合は、その旨をお伝えし、それに対して働きかけられる、
+    端末上、ストア、メール、バックアップのいずれかの手立てをご案内します。
+  </p>
+
+  <h2>お住まいの地域</h2>
+  <p>
+    このポリシーは、Gilsung が提供されているどの地域にも当てはまるように
+    書かれています。地域によっては固有の権利や連絡の経路が加わり、それらは
+    あなたのストアフロントと市場に向けて表示される版に記載されます。
+  </p>
+  <ul>
+    <li>
+      <b>韓国。</b>韓国の個人情報保護法(PIPA)により、あなたには、自分の個人情報に
+      ついて、知らされる権利、開示、訂正、削除、処理の停止を求める権利、そして
+      紛争の調停を求める権利があります。Gilsung はあなたの個人情報をすべて
+      あなた自身の端末の中で扱い、私たちはそのいずれも受け取らないため、これらの
+      権利は上に挙げたアプリ内の操作を通じて行使することになります。ご請求や
+      苦情は <a href="mailto:hello@gilsung.app">hello@gilsung.app</a> まで
+      お書きください。お返事をし、対象のデータがそもそも私たちの手元になかった
+      ものであれば、その旨をはっきりお伝えします。
+    </li>
+    <li>
+      <b>日本。</b>個人情報の保護に関する法律(個人情報保護法、APPI)により、
+      保有個人データについて、開示、訂正、利用停止、消去を請求することが
+      できます。私たちは保有個人データを一切保有していません。あなたの命式と
+      リーディングはあなたの端末の中にとどまり、私たちに送信されることはないため、
+      開発者の側に、開示や消去の対象となる保有個人データは存在しません。
+    </li>
+    <li>
+      <b>台湾、香港、その他の中国語のストアフロント。</b>現地の個人データに
+      関する法律は、あなたのデータを収集または保持している者に対して、開示、
+      訂正、削除を求める権利を認めています。私たちはアプリ内のあなたの内容を
+      収集も保持もしていないため、これらの権利はあなたの端末の上で、購入に
+      ついてはアプリストアを通じて行使することになります。
+    </li>
+    <li>
+      <b>欧州経済領域、英国、スイス。</b>上に述べたデータ保護に関する権利が
+      あります。私たちは開発者のサーバーを運用しておらず、アプリ内のあなたの
+      内容を一切受け取らないため、ほとんどの権利はあなたの端末の上か、
+      アプリストアを通じて行使することになります。その市場向けの版には、
+      責任を負う事業者、代理人がいる場合はその代理人、そしてお住まいの地域の
+      監督機関が示されます。
+    </li>
+    <li>
+      <b>米国(カリフォルニア州を含む)。</b>私たちはあなたの情報を販売せず、
+      文脈を越えた行動ターゲティング広告のために提供することもせず、あなたに
+      ついて何かを判断するためのプロファイルを作ることにも使いません。アプリ内の
+      あなたの内容を保持する開発者のサーバーは存在しません。
+    </li>
+    <li>
+      <b>その他の地域。</b>現地の法律が追加の権利や苦情を申し立てる窓口を
+      定めている場合は、その市場向けのこのポリシーの版で、それを示すか、そこへ
+      リンクします。私たちがアプリ内のあなたの内容の複製を持っていなくても、
+      お住まいの地域の窓口に苦情を申し立てることはできます。
+    </li>
+  </ul>
+
+  <h2>連絡先と、緊急時について</h2>
+  <p>
+    プライバシーについてのご質問は、
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a> までメールでお寄せ
+    ください。差し迫った緊急事態を知らせるために、このアドレスを使わないで
+    ください。このアプリは利用者を見守ってはおらず、利用者に代わって緊急の
+    通報を行うこともありません。誰かに差し迫った危険がある場合は、お住まいの
+    地域の緊急通報番号をお使いください。
+  </p>
+</section>
+
+<section class="policy" data-lang="ko" lang="ko">
+  <h2 class="langhead">한국어 (Korean)</h2>
+<h1>개인정보처리방침</h1>
+  <p class="meta">
+    Gilsung은 Pacefyx, Inc.가 출시했어요. 개인정보 관련 문의:
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>. 최종 갱신 2026년 7월.
+  </p>
+
+  <h2>짧게 줄이면</h2>
+  <p>
+    Gilsung에는 개발자 서버도, 계정 체계도, 분석 도구도, 광고도, 트래커도
+    없어요. 우리 쪽으로 오는 네트워크 통신은 하나도 없어요. 당신의 출생
+    정보와 사주, 저장한 사람들, 그리고 풀이는 휴대폰 안에서 만들어져 휴대폰
+    안에 남고, 우리는 그것을 결코 수집하지 않아요. 우리 쪽에 사본이 없으니,
+    당신의 내용을 읽거나 찾아보거나 지울 수도 없어요. 사본을 가질 수 있는
+    곳은 당신이 관리해요. 당신의 기기 백업, 앱 스토어, 당신이 보내기로 한
+    지원 메일, 그리고 당신이 공유하기로 한 것들이에요.
+  </p>
+
+  <h2>Gilsung은 어떤 앱인가요</h2>
+  <p>
+    Gilsung은 사주 四柱八字를 계산해서 보여줘요. 같은 체계를 八字, 四柱推命
+    이라고도 불러요. 네 기둥과 십신, 대운과 세운, 궁합 풀이, 그리고 택일
+    안내를 담아요. 스스로를 돌아보기 위한 것이에요. 의료·정신건강·재무·
+    법률·혼인·긴급 상황에 관한 전문적인 조언이 아니고, 사실에 대한 예측도
+    아니에요. Gilsung은 비방이나 부적, 주술, 의식을 처방하지 않고, 무엇을
+    고치거나 막아 준다거나 어떤 결과를 보장한다고 말하지 않으며, 사람이나
+    두 사람의 인연을 두고 되고 안 되고를 판정하지 않아요.
+  </p>
+
+  <h2>앱이 무엇을, 어디에서 처리하나요</h2>
+  <p>
+    앱은 당신이 직접 입력하거나 만든 것만 처리해요. 정확히 무엇이 되는지는
+    당신이 쓰는 기능에 따라 달라져요. 그 전부를 당신의 기기에서 처리해요.
+  </p>
+  <table>
+    <tr><th>항목</th><th>예시</th></tr>
+    <tr><td>출생 정보와 장소</td>
+        <td>태어난 날짜와 시각, 태어난 곳. 당신이 고른 장소. 그리고 지금 어디에 있는지에 따라 달라지는 매일의 기능이나 택일 기능을 쓸 때의 현재 위치. 태어난 시각과 곳이 시주를 정하고, 사주를 세우는 기준인 진태양시를 정해요.</td></tr>
+    <tr><td>사람들과 궁합</td>
+        <td>넣어도 되고 넣지 않아도 되는 이름, 저장한 사람들, 관계 이름표, 그리고 궁합 풀이를 위해 입력하는 두 번째 사주.</td></tr>
+    <tr><td>보관하는 풀이</td>
+        <td>원국 풀이, 대운과 세운 풀이, 택일 결과, 그리고 저장한 풀이. 모두 기기 안에 있어요.</td></tr>
+    <tr><td>간직하기와 공유</td>
+        <td>당신이 만드는 간직하기와 공유 카드의 글이나 이미지. 사본이 기기 밖으로 나가는 건 당신이 공유하거나 내보내기로 할 때뿐이에요.</td></tr>
+    <tr><td>설정과 기기 안 기록</td>
+        <td>언어와 화면 모양 같은 환경설정, 법적 고지를 확인한 기록, 알림 설정, 그리고 기기 안의 구매 상태나 이용권 상태.</td></tr>
+  </table>
+  <p>
+    태어난 시각, 그리고 궁합을 보려는 상대에 관한 정보는 당신이나 다른
+    사람의 민감한 부분을 드러낼 수 있어요. 휴대폰에 남는 것이, 백업에 담기는
+    것이, 또는 일부러 공유되는 것이 마음에 걸리는 내용이라면 입력하지 말아
+    주세요. 가족을 포함해 다른 사람의 정보를 입력하는 성인은, 그렇게 할
+    권한이 있는지에 대한 책임을 스스로 져요.
+  </p>
+
+  <h2>처리가 일어나는 곳</h2>
+  <p>
+    앱은 사주를 계산하고, 당신의 내용을 저장하고, 안전 점검을 돌리고, 풀이를
+    짜는 일을 모두 당신의 기기에서 해요. 개발자 계정도, 개발자 서버도,
+    클라우드 모델도, 분석 도구도, 광고도, 트래커도, 네트워크를 통한 모델
+    호출도 없어요.
+  </p>
+  <p>
+    이건 개발자가 무엇을 수집하는지에 관한 설명이에요. 다른 곳에 사본이 있을
+    수 없다는 뜻은 아니에요. 당신이 두는 기기 백업, 운영체제 서비스, 앱
+    스토어 거래, 그리고 당신이 무언가를 공유한 상대가 저마다 사본을 가질 수
+    있어요. 그에 관해서는 아래에 적어 두었어요.
+  </p>
+
+  <h2>우리가 받는 것</h2>
+  <p>
+    위에 적은 내용에 대해 우리가 받는 것은 아무것도 없어요. 서버 사본도, 계정
+    기록도, 분석 프로필도, 광고 프로필도 가지고 있지 않아요.
+  </p>
+  <p>
+    지원 문의는 그와 별개로, 당신이 원할 때만 쓰는 길이에요. 설정에서는 앱 안의
+    입력 양식이 아니라 <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>
+    으로 보내는 메일이 열려요. 우리에게 메일을 보내면, 당신의 메일 서비스가
+    당신의 주소와 당신이 담기로 한 내용을 우리에게 전해요. 앱은 그 메일에
+    당신의 사주나 풀이를 붙이지 않아요.
+  </p>
+
+  <h2>앱 스토어</h2>
+  <p>
+    Apple, 그리고 Google Play가 제공되는 곳에서는 Google이 각자의 스토어와 결제,
+    계정, 지원 체계를 운영해요. 두 회사는 각자의 약관과 개인정보 고지에 따라
+    스토어 계정, 구매, 영수증, 청구, 세금, 기기, 부정 사용, 환불에 관한 정보를
+    처리할 수 있어요. 우리는 구매한 것을 앱에서 쓸 수 있게 하는 데 필요한
+    범위의 거래 정보나 이용권 정보를 받을 수 있어요. 당신의 출생 정보, 사주,
+    풀이, 궁합, 간직하기 내용을 스토어를 통해 받지는 않아요.
+    <a href="https://www.apple.com/legal/privacy/">Apple 개인정보 처리방침</a>과
+    <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을
+    참고하세요. 스토어에서 결제한 구매는 그 스토어의 환불 절차를 이용하시고,
+    거주 지역 법이 정한 소비자 권리는 그대로 유지돼요.
+  </p>
+
+  <h2>풀이가 만들어지는 방식</h2>
+  <p>
+    풀이는 당신의 사주와, 우리가 미리 쓰고 검토해 둔 글의 묶음을 바탕으로
+    당신의 기기에서 짜여요. 당신이 앱을 쓰는 동안 새로 쓰이는 글은 없고,
+    당신이 입력한 것이 우리에게 보내지거나 무언가를 학습시키는 데 쓰이지도
+    않아요. 풀이는 스스로를 돌아보기 위한 것이고, 사실에 대한 예측도, 의료·
+    정신건강·재무·법률·혼인·긴급 상황에 관한 전문 서비스도 아니에요.
+  </p>
+
+  <h2>보관과 삭제, 백업과 공유</h2>
+  <p>
+    당신의 내용은 당신이 고치거나 지울 때까지, '처음부터 다시'나 기기 안의
+    다른 삭제 기능을 쓸 때까지, 또는 앱을 지울 때까지 휴대폰에 남아요. 그
+    기능들은 앱의 내용과 기기 안에서 파생된 사본을 지워요. 앱이 당신이 가진
+    것을 알아볼 수 있도록 기기 안의 구매 기록은 남을 수 있어요. 스토어의 구매
+    기록은 스토어 쪽에 남아요.
+  </p>
+  <p>
+    기기 백업을 쓴다면 당신의 내용이 거기 담길 수 있어요. 백업은 우리가 아니라
+    당신과, 당신의 운영체제 또는 백업 서비스가 관리해요. 앱을 지운 뒤에도
+    백업은 사본을 가지고 있을 수 있고, 백업을 복원하면 데이터가 되살아날 수
+    있어요. 우리는 당신의 백업을 찾아보거나 바꾸거나 지울 수 없어요. 백업에서
+    데이터를 없애려면 기기나 백업 서비스에서 그 백업을 직접 관리하세요.
+  </p>
+  <p>
+    당신이 공유하는 것(공유 카드, 간직하기, 내보내기)은 모두 당신이 직접 정해서
+    보내는 거예요. 당신이나 받은 사람이 그것을 다른 곳으로 옮기고 나면, 우리는
+    그 사본을 지울 수 없어요. 믿을 수 있는 사람에게만 공유해 주세요.
+  </p>
+
+  <h2>이용 연령</h2>
+  <p>
+    Gilsung은 만 16세 이상을 위한 앱이에요. 성인은 궁합이나 가족 풀이를 위해
+    아이를 포함한 가족의 정보를 입력할 수 있어요. 그럴 권한이 있는 경우가
+    아니라면 아이의 정보를 입력하지 말아 주세요.
+  </p>
+
+  <h2>당신의 권리와 행사 방법</h2>
+  <p>
+    사는 곳에 따라, 당신에게는 개인정보의 열람, 정정, 삭제, 처리의 제한이나
+    처리에 대한 반대, 사본을 받을 권리가 있을 수 있어요. 동의가 처리의 근거인
+    경우에는 동의를 철회할 권리, 그리고 감독기관에 신고할 권리도 있을 수
+    있어요. Gilsung에는 개발자 쪽 서버가 없기 때문에, 앱 안의 내용에 대해 이
+    권리를 행사하는 주된 길은 당신의 기기에 있어요.
+  </p>
+  <ul>
+    <li>앱에서 프로필과 장소, 사람들, 풀이를 보거나 고쳐요.</li>
+    <li>'처음부터 다시'나 해당하는 기기 안의 삭제 기능으로 앱의 내용을 지워요.</li>
+    <li>앱을 지우고, 더 두고 싶지 않은 기기 사본이나 백업 사본은 따로 정리해요.</li>
+    <li>Apple이나 Google이 가지고 있는 것은 스토어의 계정, 구매, 영수증, 환불 기능으로 처리해요.</li>
+  </ul>
+  <p>
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>으로 연락하셔도
+    돼요. 요청하신 정보를 우리가 가지고 있는지 알려드릴게요. 사본이 없다면
+    없다고 그대로 말씀드리고, 그 정보를 다룰 수 있는 기기 안의 기능이나 스토어,
+    메일, 백업 쪽 방법을 안내해 드릴게요.
+  </p>
+
+  <h2>지역별 안내</h2>
+  <p>
+    이 방침은 Gilsung이 제공되는 모든 곳에 적용되도록 썼어요. 어떤 지역은 별도의
+    권리와 연락 경로를 더하는데, 그 내용은 당신의 스토어와 시장에 맞춰 표시되는
+    판본에 담겨요.
+  </p>
+  <ul>
+    <li>
+      <b>대한민국.</b> 「개인정보 보호법」(PIPA)에 따라 당신에게는 개인정보의
+      처리에 관하여 정보를 제공받을 권리, 열람을 요구할 권리, 정정과 삭제를
+      요구할 권리, 처리정지를 요구할 권리, 그리고 개인정보 분쟁조정을 신청할
+      권리가 있어요. Gilsung은 당신의 개인정보를 전부 당신의 기기에서만
+      처리하고 우리는 그중 어느 것도 받지 않으니, 이 권리들은 위에 적은 앱 안의
+      기능으로 행사해요. 요청이나 고충이 있으면
+      <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>으로 알려 주세요.
+      답을 드리고, 문제가 된 데이터가 우리가 애초에 가진 적 없는 것이라면
+      그렇다고 그대로 말씀드릴게요.
+    </li>
+    <li>
+      <b>일본.</b> 「개인정보의 보호에 관한 법률」(APPI)에 따라 보유 개인데이터의
+      공개, 정정, 이용정지, 삭제를 청구할 수 있어요. 우리는 그런 데이터를 전혀
+      보유하고 있지 않아요. 당신의 사주와 풀이는 당신의 기기에 남고 우리에게
+      전송되지 않으니, 개발자가 공개하거나 삭제할 보유 개인데이터 자체가
+      없어요.
+    </li>
+    <li>
+      <b>대만, 홍콩, 그 밖의 중국어 스토어.</b> 현지 개인정보 법은 당신의
+      데이터를 수집하거나 보유한 상대에게 열람과 정정, 삭제를 요구할 권리를
+      줘요. 우리는 앱 안의 내용을 수집하지도 보유하지도 않으니, 이 권리들은
+      당신의 기기에서, 그리고 구매에 관해서는 앱 스토어를 통해 행사해요.
+    </li>
+    <li>
+      <b>유럽경제지역, 영국, 스위스.</b> 위에 적은 개인정보 보호 권리를 가지고
+      계세요. 우리는 개발자 서버를 운영하지 않고 앱 안의 내용을 받지도 않으니,
+      대부분의 권리는 당신의 기기에서 또는 앱 스토어를 통해 행사해요. 해당
+      시장의 판본에는 책임 주체와, 대리인이 있다면 그 대리인, 그리고 그 지역의
+      감독기관이 적혀 있어요.
+    </li>
+    <li>
+      <b>미국(캘리포니아 포함).</b> 우리는 당신의 정보를 판매하지 않고, 교차
+      맥락 행태 광고를 위해 제공하지 않으며, 어떤 결정을 위해 당신을
+      프로파일링하는 데 쓰지도 않아요. 앱 안의 내용을 가지고 있는 개발자 서버는
+      없어요.
+    </li>
+    <li>
+      <b>그 밖의 지역.</b> 현지 법이 권리를 더 주거나 신고를 받는 기관을 두고
+      있으면, 그 시장의 방침 판본이 그 이름을 적거나 링크로 이어 줘요. 우리가
+      앱 안의 내용을 한 부도 가지고 있지 않더라도, 당신은 현지 기관에 신고할 수
+      있어요.
+    </li>
+  </ul>
+
+  <h2>문의, 그리고 긴급 상황</h2>
+  <p>
+    개인정보에 관해 궁금한 점이 있으면
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>으로 메일을 보내
+    주세요. 당장 급한 위급 상황을 알리는 데에는 이 주소를 쓰지 말아 주세요. 이
+    앱은 이용자를 지켜보고 있지 않고, 대신 긴급 구조 기관에 연락해 주지도
+    않아요. 누군가 지금 위험에 처해 있다면 그 지역의 긴급 전화번호를 이용해
+    주세요.
+  </p>
+</section>
+
+<section class="policy" data-lang="th" lang="th">
+  <h2 class="langhead">ไทย (Thai)</h2>
+<h1>นโยบายความเป็นส่วนตัว</h1>
+  <p class="meta">
+    Gilsung เผยแพร่โดย Pacefyx, Inc. ติดต่อเรื่องความเป็นส่วนตัวได้ที่
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a> ปรับปรุงล่าสุด กรกฎาคม 2026
+  </p>
+
+  <h2>ฉบับย่อ</h2>
+  <p>
+    Gilsung ไม่มีเซิร์ฟเวอร์ของผู้พัฒนา ไม่มีระบบบัญชีผู้ใช้ ไม่มีการวิเคราะห์
+    การใช้งาน ไม่มีโฆษณา และไม่มีตัวติดตาม แอปไม่เรียกเครือข่ายมาหาเราเลย
+    รายละเอียดการเกิดของคุณ ผังดวงสี่เสา ผู้คนที่คุณบันทึกไว้ และคำอ่านต่าง ๆ
+    ถูกสร้างและเก็บไว้ในโทรศัพท์ของคุณ และเราไม่เก็บรวบรวมสิ่งเหล่านั้น
+    เพราะไม่มีสำเนาอยู่ฝั่งเรา เราจึงไม่สามารถอ่าน ค้นหา หรือลบเนื้อหาของคุณได้
+    ส่วนที่อาจมีสำเนาอยู่ได้นั้นอยู่ในการควบคุมของคุณ ได้แก่
+    การสำรองข้อมูลของอุปกรณ์ที่คุณทำเอง ร้านค้าแอป
+    อีเมลขอความช่วยเหลือที่คุณเลือกส่งมา และสิ่งที่คุณตัดสินใจแบ่งปัน
+  </p>
+
+  <h2>Gilsung คืออะไร</h2>
+  <p>
+    Gilsung คำนวณและแสดงเนื้อหาสี่เสาชะตา ที่รู้จักกันในชื่อ โป๊ยยี่ 八字
+    ซาจู 사주 และ ชิชูซุยเม 四柱推命 ได้แก่ เสาทั้งสี่ สิบเทพ (十神)
+    ตาอวิ้น (大運) ปีจร (流年) คำอ่านการจับคู่ดวง และคำแนะนำการเลือกวัน
+    แอปนี้มีไว้เพื่อการใคร่ครวญ ไม่ใช่คำแนะนำจากผู้เชี่ยวชาญทางการแพทย์
+    สุขภาพจิต การเงิน กฎหมาย การสมรส หรือกรณีฉุกเฉิน
+    และไม่ใช่การทำนายข้อเท็จจริง Gilsung ไม่สั่งการแก้เคราะห์ เครื่องราง
+    ของขลัง หรือพิธีกรรมใด ๆ ไม่กล่าวอ้างว่ารักษา ป้องกัน
+    หรือรับประกันผลลัพธ์ใด และไม่เคยตัดสินว่าบุคคลใดหรือคู่ใดผ่านหรือไม่ผ่าน
+  </p>
+
+  <h2>แอปประมวลผลอะไร และประมวลผลที่ใด</h2>
+  <p>
+    แอปประมวลผลเฉพาะสิ่งที่คุณเลือกกรอกหรือสร้างขึ้นเท่านั้น ชุดข้อมูลที่แน่นอน
+    ขึ้นอยู่กับฟีเจอร์ที่คุณใช้ ทั้งหมดนี้ประมวลผลบนอุปกรณ์ของคุณ
+  </p>
+  <table>
+    <tr><th>รายการ</th><th>ตัวอย่าง</th></tr>
+    <tr><td>รายละเอียดการเกิดและสถานที่</td>
+        <td>วันเดือนปีเกิด เวลาเกิด และสถานที่เกิด สถานที่ที่คุณเลือก และตำแหน่งปัจจุบันของคุณเมื่อใช้ฟีเจอร์รายวันหรือการเลือกวันที่ขึ้นอยู่กับว่าคุณอยู่ที่ใด เวลาและสถานที่เกิดของคุณเป็นตัวกำหนดเสายามและเวลาสุริยะจริงที่ใช้สร้างผังดวง</td></tr>
+    <tr><td>ผู้คนและการจับคู่ดวง</td>
+        <td>ชื่อที่จะใส่หรือไม่ก็ได้ ผู้คนที่บันทึกไว้ ป้ายกำกับความสัมพันธ์ และผังดวงที่สองที่คุณกรอกเพื่ออ่านการจับคู่ดวง</td></tr>
+    <tr><td>คำอ่านที่คุณเก็บไว้</td>
+        <td>คำตีความผังดวง คำอ่านตาอวิ้นและปีจร ผลการเลือกวัน และคำอ่านที่บันทึกไว้ ทั้งหมดเก็บอยู่ในเครื่อง</td></tr>
+    <tr><td>ของที่ระลึกและการแบ่งปัน</td>
+        <td>ข้อความหรือภาพของที่ระลึกและการ์ดแบ่งปันที่คุณสร้างขึ้น สำเนาจะออกจากอุปกรณ์ของคุณก็ต่อเมื่อคุณเลือกแบ่งปันหรือส่งออกเท่านั้น</td></tr>
+    <tr><td>การตั้งค่าและบันทึกในเครื่อง</td>
+        <td>ค่าที่คุณตั้งไว้ เช่น ภาษาและรูปลักษณ์ การรับทราบข้อความทางกฎหมาย ตัวเลือกการเตือน และสถานะการซื้อหรือสิทธิการใช้งานที่เก็บในเครื่อง</td></tr>
+  </table>
+  <p>
+    เวลาเกิด และรายละเอียดเกี่ยวกับคู่ที่กำลังพิจารณา
+    อาจเปิดเผยเรื่องละเอียดอ่อนเกี่ยวกับตัวคุณหรือผู้อื่นได้
+    กรุณาอย่ากรอกสิ่งที่คุณไม่ต้องการให้เก็บอยู่ในโทรศัพท์
+    อยู่ในไฟล์สำรองข้อมูล หรือถูกแบ่งปันโดยตั้งใจ
+    ผู้ใหญ่ที่กรอกรายละเอียดของบุคคลอื่น รวมถึงสมาชิกในครอบครัว
+    มีหน้าที่รับผิดชอบว่าตนมีสิทธิที่จะทำเช่นนั้น
+  </p>
+
+  <h2>การประมวลผลเกิดขึ้นที่ใด</h2>
+  <p>
+    แอปคำนวณผังดวง จัดเก็บเนื้อหาของคุณ ทำการตรวจสอบด้านความปลอดภัย
+    และเรียบเรียงคำอ่านของคุณ บนอุปกรณ์ของคุณเอง ไม่มีบัญชีของผู้พัฒนา
+    เซิร์ฟเวอร์ของผู้พัฒนา โมเดลบนคลาวด์ การวิเคราะห์การใช้งาน โฆษณา
+    ตัวติดตาม หรือการเรียกโมเดลผ่านเครือข่าย
+  </p>
+  <p>
+    นี่คือคำแถลงว่าผู้พัฒนาเก็บรวบรวมอะไร
+    ไม่ได้หมายความว่าสำเนาจะมีอยู่ที่อื่นไม่ได้ ไฟล์สำรองข้อมูลที่คุณเก็บไว้
+    บริการของระบบปฏิบัติการ รายการซื้อในร้านค้าแอป หรือคนที่คุณแบ่งปันด้วย
+    ต่างก็อาจมีสำเนาอยู่ได้ สิ่งเหล่านี้อธิบายไว้ด้านล่าง
+  </p>
+
+  <h2>สิ่งที่เราได้รับ</h2>
+  <p>
+    สำหรับเนื้อหาที่กล่าวถึงข้างต้น เราไม่ได้รับอะไรเลย
+    เราไม่มีสำเนาบนเซิร์ฟเวอร์ ไม่มีบันทึกบัญชีผู้ใช้
+    ไม่มีโปรไฟล์การวิเคราะห์การใช้งาน และไม่มีโปรไฟล์เพื่อการโฆษณา
+  </p>
+  <p>
+    การขอความช่วยเหลือเป็นอีกเส้นทางหนึ่งที่แยกออกไปและเป็นความสมัครใจ
+    หน้าตั้งค่าจะเปิดอีเมลไปยัง
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a> แทนที่จะเป็นแบบฟอร์ม
+    ในแอป หากคุณส่งอีเมลถึงเรา ผู้ให้บริการอีเมลของคุณจะให้ที่อยู่อีเมลของคุณ
+    แก่เรา พร้อมกับสิ่งที่คุณเลือกใส่มาในอีเมลนั้น
+    แอปไม่ได้แนบผังดวงหรือคำอ่านของคุณไปกับอีเมลฉบับนั้น
+  </p>
+
+  <h2>ร้านค้าแอป</h2>
+  <p>
+    Apple และ Google ในที่ที่มีให้บริการผ่าน Google Play ต่างดำเนินระบบร้านค้า
+    การชำระเงิน บัญชีผู้ใช้ และการช่วยเหลือของตนเอง
+    ทั้งสองอาจประมวลผลข้อมูลบัญชีร้านค้า การซื้อ ใบเสร็จ การเรียกเก็บเงิน ภาษี
+    อุปกรณ์ การป้องกันการฉ้อโกง และการคืนเงิน
+    ภายใต้ข้อกำหนดและประกาศความเป็นส่วนตัวของตนเอง
+    เราอาจได้รับข้อมูลรายการซื้อหรือสิทธิการใช้งานเท่าที่จำเป็น
+    เพื่อให้สิ่งที่ซื้อใช้งานได้ในแอป เราไม่ได้รับเนื้อหาการเกิด ผังดวง คำอ่าน
+    การจับคู่ดวง หรือของที่ระลึกของคุณผ่านร้านค้า
+    ดู <a href="https://www.apple.com/legal/privacy/">ความเป็นส่วนตัวของ Apple</a> และ
+    <a href="https://policies.google.com/privacy">ความเป็นส่วนตัวของ Google</a>
+    สำหรับการซื้อที่ร้านค้าเป็นผู้เรียกเก็บเงิน
+    ให้ใช้ช่องทางการคืนเงินของร้านค้านั้น
+    และคุณยังคงมีสิทธิผู้บริโภคตามกฎหมายท้องถิ่นที่บังคับใช้อยู่เสมอ
+  </p>
+
+  <h2>คำอ่านของคุณสร้างขึ้นอย่างไร</h2>
+  <p>
+    คำอ่านของคุณถูกเรียบเรียงขึ้นบนอุปกรณ์ของคุณ จากผังดวงของคุณเอง
+    และคลังข้อเขียนที่เราจัดเตรียมและตรวจทานไว้ล่วงหน้า
+    ไม่มีการเขียนขึ้นใหม่ขณะที่คุณใช้แอป และไม่มีสิ่งที่คุณกรอกถูกส่งมาหาเรา
+    หรือถูกนำไปฝึกสิ่งใด คำอ่านมีไว้เพื่อการใคร่ครวญ ไม่ใช่การทำนายข้อเท็จจริง
+    และไม่ใช่บริการจากผู้เชี่ยวชาญทางการแพทย์ สุขภาพจิต การเงิน กฎหมาย การสมรส
+    หรือกรณีฉุกเฉิน
+  </p>
+
+  <h2>การเก็บ การลบ การสำรองข้อมูล และการแบ่งปัน</h2>
+  <p>
+    เนื้อหาของคุณอยู่ในโทรศัพท์ของคุณจนกว่าคุณจะแก้ไขหรือลบ ใช้ “เริ่มใหม่”
+    หรือปุ่มลบในเครื่องอื่น ๆ หรือลบแอปออก
+    ปุ่มเหล่านั้นจะลบเนื้อหาของแอปและสำเนาที่แอปสร้างต่อไว้ในเครื่อง
+    บันทึกการซื้อในเครื่องอาจถูกเก็บไว้เพื่อให้แอปรู้ว่าคุณเป็นเจ้าของสิ่งใด
+    ส่วนบันทึกการซื้อของร้านค้ายังคงอยู่กับร้านค้า
+  </p>
+  <p>
+    หากคุณใช้การสำรองข้อมูลของอุปกรณ์ เนื้อหาของคุณอาจรวมอยู่ในไฟล์สำรองนั้น
+    ไฟล์สำรองข้อมูลอยู่ในการควบคุมของคุณและของระบบปฏิบัติการ
+    หรือผู้ให้บริการสำรองข้อมูลของคุณ ไม่ใช่ของเรา
+    ไฟล์สำรองยังคงมีสำเนาอยู่ได้แม้ลบแอปไปแล้ว
+    และการกู้คืนไฟล์นั้นก็กู้ข้อมูลของคุณกลับมาได้ เราไม่สามารถค้นหา
+    เปลี่ยนแปลง หรือลบไฟล์สำรองของคุณได้ หากต้องการลบข้อมูลออกจากไฟล์สำรอง
+    ให้จัดการไฟล์สำรองนั้นผ่านอุปกรณ์หรือผู้ให้บริการสำรองข้อมูลของคุณ
+  </p>
+  <p>
+    สิ่งที่คุณแบ่งปัน (การ์ดแบ่งปัน ของที่ระลึก หรือไฟล์ที่ส่งออก)
+    เกิดขึ้นตามที่ผู้ใช้สั่ง เมื่อคุณหรือผู้รับส่งต่อไปที่อื่นแล้ว
+    เราไม่สามารถลบสำเนานั้นได้ กรุณาแบ่งปันเฉพาะกับคนที่คุณไว้ใจ
+  </p>
+
+  <h2>อายุ</h2>
+  <p>
+    Gilsung มีไว้สำหรับผู้ที่อายุ 16 ปีขึ้นไป
+    ผู้ใหญ่สามารถกรอกข้อมูลของสมาชิกในครอบครัว รวมถึงเด็ก
+    เพื่ออ่านการจับคู่ดวงหรือคำอ่านของครอบครัวได้ กรุณาอย่ากรอกข้อมูลของเด็ก
+    เว้นแต่คุณได้รับอนุญาตให้ทำเช่นนั้น
+  </p>
+
+  <h2>สิทธิของคุณ และวิธีใช้สิทธิ</h2>
+  <p>
+    ขึ้นอยู่กับว่าคุณอาศัยอยู่ที่ใด คุณอาจมีสิทธิเข้าถึง แก้ไขให้ถูกต้อง ลบ
+    ระงับการใช้ หรือคัดค้านการประมวลผล ตลอดจนขอรับสำเนาข้อมูลของคุณ
+    มีสิทธิถอนความยินยอมในกรณีที่ใช้ความยินยอมเป็นฐาน
+    และมีสิทธิร้องเรียนต่อหน่วยงานกำกับดูแล เนื่องจาก Gilsung
+    ไม่มีระบบหลังบ้านของผู้พัฒนา
+    วิธีหลักในการใช้สิทธิเหล่านี้กับเนื้อหาในแอปคือทำบนอุปกรณ์ของคุณเอง:
+  </p>
+  <ul>
+    <li>ดูหรือแก้ไขโปรไฟล์ สถานที่ ผู้คน และคำอ่านของคุณได้ในแอป</li>
+    <li>ใช้ “เริ่มใหม่” หรือปุ่มลบในเครื่องที่เกี่ยวข้อง เพื่อลบเนื้อหาของแอป</li>
+    <li>ลบแอปออก และจัดการสำเนาในอุปกรณ์หรือในไฟล์สำรองที่คุณไม่ต้องการแล้วแยกต่างหาก</li>
+    <li>ใช้เครื่องมือจัดการบัญชี การซื้อ ใบเสร็จ และการคืนเงินของร้านค้า สำหรับสิ่งที่ Apple หรือ Google เก็บไว้</li>
+  </ul>
+  <p>
+    คุณติดต่อ <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>
+    ได้เช่นกัน เราจะแจ้งให้คุณทราบว่าเรามีข้อมูลตามคำขอของคุณอยู่หรือไม่
+    หากเราไม่มีสำเนาใดเลย เราจะบอกตามตรง และชี้ให้คุณเห็นปุ่มบนอุปกรณ์ ร้านค้า
+    อีเมล หรือการสำรองข้อมูล ที่จัดการเรื่องนั้นได้
+  </p>
+
+  <h2>ภูมิภาคของคุณ</h2>
+  <p>
+    นโยบายนี้เขียนขึ้นให้ใช้ได้ทุกที่ที่มี Gilsung ให้บริการ
+    บางภูมิภาคเพิ่มสิทธิและช่องทางติดต่อเฉพาะ
+    ซึ่งจะปรากฏในฉบับที่แสดงสำหรับหน้าร้านและตลาดของคุณ:
+  </p>
+  <ul>
+    <li>
+      <b>เกาหลีใต้</b> ภายใต้พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล (PIPA)
+      คุณมีสิทธิได้รับแจ้ง สิทธิเข้าถึง แก้ไขให้ถูกต้อง ลบ
+      และระงับการประมวลผลข้อมูลส่วนบุคคลของคุณ
+      ตลอดจนสิทธิขอให้มีการไกล่เกลี่ยข้อพิพาท Gilsung
+      ประมวลผลข้อมูลส่วนบุคคลของคุณบนอุปกรณ์ของคุณเองทั้งหมด
+      และเราไม่ได้รับข้อมูลนั้นเลย
+      สิทธิเหล่านั้นจึงใช้ผ่านเครื่องมือในแอปที่กล่าวไว้ข้างต้น
+      หากต้องการยื่นคำขอหรือร้องทุกข์ เขียนมาที่
+      <a href="mailto:hello@gilsung.app">hello@gilsung.app</a> เราจะตอบกลับ
+      และบอกคุณอย่างตรงไปตรงมาหากข้อมูลที่ถามถึงเป็นข้อมูลที่เราไม่เคยมีอยู่เลย
+    </li>
+    <li>
+      <b>ญี่ปุ่น</b> ภายใต้กฎหมายว่าด้วยการคุ้มครองข้อมูลส่วนบุคคล (APPI)
+      คุณอาจขอให้เปิดเผย แก้ไขให้ถูกต้อง ระงับการใช้
+      หรือลบข้อมูลส่วนบุคคลที่เก็บรักษาไว้ได้ เราไม่ได้เก็บรักษาข้อมูลใดไว้เลย
+      ผังดวงและคำอ่านของคุณอยู่บนอุปกรณ์ของคุณและไม่เคยถูกส่งมาหาเรา
+      จึงไม่มีข้อมูลส่วนบุคคลที่ผู้พัฒนาเก็บรักษาไว้ให้เปิดเผยหรือลบ
+    </li>
+    <li>
+      <b>ไต้หวัน ฮ่องกง และหน้าร้านภาษาจีนอื่น ๆ</b>
+      กฎหมายข้อมูลส่วนบุคคลในท้องถิ่นให้สิทธิคุณในการเข้าถึง แก้ไขให้ถูกต้อง
+      และลบข้อมูล ต่อฝ่ายที่เก็บรวบรวมหรือถือครองข้อมูลของคุณ
+      เราไม่ได้เก็บรวบรวมและไม่ได้ถือครองเนื้อหาในแอปของคุณเลย
+      สิทธิเหล่านั้นจึงใช้บนอุปกรณ์ของคุณ และสำหรับการซื้อ ใช้ผ่านร้านค้าแอป
+    </li>
+    <li>
+      <b>เขตเศรษฐกิจยุโรป สหราชอาณาจักร และสวิตเซอร์แลนด์</b>
+      คุณมีสิทธิด้านการคุ้มครองข้อมูลตามที่อธิบายไว้ข้างต้น
+      เนื่องจากเราไม่ได้ดำเนินการเซิร์ฟเวอร์ของผู้พัฒนา
+      และไม่ได้รับเนื้อหาในแอปของคุณเลย
+      สิทธิส่วนใหญ่จึงใช้บนอุปกรณ์ของคุณหรือผ่านร้านค้าแอป
+      นโยบายฉบับสำหรับตลาดนั้นจะระบุชื่อผู้รับผิดชอบ ตัวแทนใด ๆ
+      และหน่วยงานกำกับดูแลในท้องถิ่นของคุณ
+    </li>
+    <li>
+      <b>สหรัฐอเมริกา รวมถึงรัฐแคลิฟอร์เนีย</b> เราไม่ขายข้อมูลของคุณ
+      ไม่แบ่งปันข้อมูลนั้นเพื่อการโฆษณาตามพฤติกรรมข้ามบริบท
+      และไม่ใช้ข้อมูลนั้นสร้างโปรไฟล์ของคุณเพื่อการตัดสินใจใด ๆ
+      ไม่มีเซิร์ฟเวอร์ของผู้พัฒนาที่ถือครองเนื้อหาในแอปของคุณ
+    </li>
+    <li>
+      <b>ภูมิภาคอื่น ๆ</b>
+      ในที่ที่กฎหมายท้องถิ่นให้สิทธิเพิ่มเติมหรือกำหนดหน่วยงานรับเรื่องร้องเรียน
+      นโยบายฉบับสำหรับตลาดนั้นจะระบุชื่อหรือลิงก์ไปยังสิ่งนั้น
+      คุณร้องเรียนต่อหน่วยงานในท้องถิ่นของคุณได้
+      แม้ว่าเราจะไม่มีสำเนาเนื้อหาในแอปของคุณอยู่เลยก็ตาม
+    </li>
+  </ul>
+
+  <h2>การติดต่อ และกรณีฉุกเฉิน</h2>
+  <p>
+    หากมีคำถามเรื่องความเป็นส่วนตัว ส่งอีเมลมาที่
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>
+    กรุณาอย่าใช้ที่อยู่นี้แจ้งเหตุฉุกเฉินเฉพาะหน้า แอปไม่ได้เฝ้าติดตามผู้ใช้
+    และไม่ได้ติดต่อหน่วยบริการฉุกเฉินแทนผู้ใช้
+    หากมีใครตกอยู่ในอันตรายเฉพาะหน้า
+    ให้ใช้หมายเลขฉุกเฉินในท้องถิ่นของคุณ
+  </p>
+</section>
+
+<section class="policy" data-lang="zh-Hans" lang="zh-Hans">
+  <h2 class="langhead">简体中文 (Chinese (Simplified))</h2>
+<h1>隐私政策</h1>
+  <p class="meta">
+    Gilsung 由 Pacefyx, Inc. 发布。隐私事务联系方式:
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>。最后更新于 2026 年 7 月。
+  </p>
+
+  <h2>简短的说法</h2>
+  <p>
+    Gilsung 没有开发者服务器,没有账号体系,没有数据分析,没有广告,也没有
+    追踪器。它不会向我们发起任何网络请求。你的出生信息、四柱命盘、保存的人物
+    和解读,都在你的手机上生成、留在你的手机里,我们从不收集它们。因为我们
+    这边没有副本,我们无法读取、搜索或删除你的内容。可能存有副本的那几处,
+    由你自己掌握:你自己的设备备份、应用商店、你选择发出的支持邮件,以及你
+    决定分享出去的任何东西。
+  </p>
+
+  <h2>Gilsung 是什么</h2>
+  <p>
+    Gilsung 推算并显示四柱命理的内容,也就是中国的八字、韩国的사주和日本的
+    四柱推命:四柱、十神、大运、流年,以及合婚解读和择日指引。它是供你自我
+    省察的,不是医疗、心理健康、财务、法律、婚姻或紧急情况方面的专业建议,
+    也不是对事实的预测。Gilsung 不开化解之法,不提供法器、符咒或仪轨,不宣称
+    能治愈、预防或保证任何结果,也绝不对一个人或一段关系下成或不成的判词。
+  </p>
+
+  <h2>应用处理什么,在哪里处理</h2>
+  <p>
+    应用只处理你选择输入或创建的内容。具体有哪些,取决于你使用了哪些功能。
+    这些处理全部在你的设备上完成。
+  </p>
+  <table>
+    <tr><th>类别</th><th>举例</th></tr>
+    <tr><td>出生与地点信息</td>
+        <td>出生的日期、时间和地点;你选定的地点;当你使用依赖所在位置的每日或择日功能时,你当前的所在地。你的出生时间和地点决定时柱,也决定命盘所依据的真太阳时。</td></tr>
+    <tr><td>人物与合婚</td>
+        <td>可填可不填的姓名、你保存的人物、关系标签,以及你为合婚解读输入的第二个命盘。</td></tr>
+    <tr><td>你保存的解读</td>
+        <td>命盘解读、大运和流年的解读、择日结果和已保存的解读,全部存放在本地。</td></tr>
+    <tr><td>纪念卡与分享</td>
+        <td>你制作的纪念卡和分享卡的文字或图片。只有当你选择分享或导出时,才会有一份副本离开你的设备。</td></tr>
+    <tr><td>设置与本地记录</td>
+        <td>语言和外观等偏好设置、你对法律条款的确认、提醒的选择,以及本地的购买或权益状态。</td></tr>
+  </table>
+  <p>
+    出生的时辰,以及关于一段拟议关系的信息,可能牵涉到你或他人较为敏感的事。
+    凡是你不愿意留在手机里、不愿意被备份带走、也不愿意被特意分享出去的内容,
+    请不要输入。成年人输入他人(包括家人)的信息时,应当自行确保有权这样做。
+  </p>
+
+  <h2>处理在哪里进行</h2>
+  <p>
+    排盘、保存你的内容、运行安全检查、生成你的解读,这些都在你的设备上进行。
+    没有开发者账号,没有开发者服务器,没有云端模型,没有数据分析,没有广告,
+    没有追踪器,也没有向网络模型发出的调用。
+  </p>
+  <p>
+    这句话说的是开发者收集了什么。它不等于别处不可能存在副本:你保留的设备
+    备份、操作系统的服务、应用商店的交易记录,或者你分享的对象,都可能存有
+    一份副本。下面逐一说明。
+  </p>
+
+  <h2>我们会收到什么</h2>
+  <p>
+    上面说到的这些内容,我们一样都收不到。我们没有服务器副本,没有账号记录,
+    没有分析画像,也没有广告画像。
+  </p>
+  <p>
+    支持是另外一条路,走不走由你。设置里的入口打开的是一封发往
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a> 的邮件,而不是应用内的
+    表单。你给我们写信时,你的邮件服务商会把你的邮箱地址,连同你选择写进信里
+    的内容,一并交给我们。应用不会把你的命盘或解读附在那封邮件里。
+  </p>
+
+  <h2>应用商店</h2>
+  <p>
+    Apple,以及在提供 Google Play 的地区的 Google,各自运营自己的商店、支付、
+    账号和支持系统。他们可能依据各自的条款和隐私声明,处理商店账号、购买、
+    收据、账单、税务、设备、反欺诈和退款方面的信息。我们可能收到有限的交易
+    或权益信息,仅限于让你购买的项目能在应用里生效所必需的部分。我们不会通过
+    商店收到你的出生信息、命盘、解读、合婚或纪念卡的内容。
+    详见 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>和
+    <a href="https://policies.google.com/privacy">Google 隐私政策</a>。由商店
+    代收款的购买,请走该商店自己的退款流程;当地法律强制赋予你的消费者权利
+    不受影响。
+  </p>
+
+  <h2>你的解读是怎么来的</h2>
+  <p>
+    你的解读是在你的设备上生成的,依据的是你自己的命盘,以及一套我们事先写好
+    并审校过的文稿。你使用应用的过程中不会现写任何文字,你输入的任何内容都不会
+    被送到我们这里,也不会被用来训练任何东西。解读是供你自我省察的,不是对事实
+    的预测,也不是医疗、心理健康、财务、法律、婚姻或紧急情况方面的专业服务。
+  </p>
+
+  <h2>保存、删除、备份与分享</h2>
+  <p>
+    你的内容会一直留在你的手机里,直到你自己修改或删除它,使用“重新开始”或
+    其他本地的删除操作,或者删除应用为止。这些操作会清除应用里的内容,以及由它
+    在本地生成的副本。本地的购买记录可能会保留,以便应用识别你已经拥有哪些项目;
+    商店那边的购买记录留在商店。
+  </p>
+  <p>
+    如果你使用设备备份,你的内容可能被包含在备份里。备份由你和你的操作系统或
+    备份服务商掌握,不由我们掌握。应用被删除之后,备份里仍可能存有一份副本,
+    恢复备份也可能把你的数据一并恢复。我们无法搜索、修改或抹除你的备份。要从
+    备份中移除数据,请在你的设备或备份服务商那里管理那份备份。
+  </p>
+  <p>
+    你分享出去的任何东西(分享卡、纪念卡或导出的文件),都是由你主动发起的。
+    一旦你或收到的人把它再分享到别处,我们无法删除那份副本。请只分享给你
+    信任的人。
+  </p>
+
+  <h2>年龄</h2>
+  <p>
+    Gilsung 面向 16 岁及以上的人。成年人可以为合婚或家人的解读,输入家庭成员
+    (包括儿童)的信息。除非你有权这样做,否则请不要输入儿童的信息。
+  </p>
+
+  <h2>你的权利,以及如何行使</h2>
+  <p>
+    依你所在地的法律,你可能有权查阅、更正、删除你的信息,限制处理或提出反对,
+    或者获取一份副本;在以同意为处理依据时撤回同意;并向监管机构投诉。由于
+    Gilsung 没有开发者后台,就应用里的内容而言,行使这些权利的主要途径是在你
+    自己的设备上:
+  </p>
+  <ul>
+    <li>在应用里查看或修改你的个人资料、地点、人物和解读。</li>
+    <li>使用“重新开始”或相应的本地删除操作,清除应用里的内容。</li>
+    <li>删除应用,并另行处理你不想再保留的设备副本或备份副本。</li>
+    <li>凡是由 Apple 或 Google 保存的部分,使用商店自己的账号、购买、收据和退款功能来处理。</li>
+  </ul>
+  <p>
+    你也可以写信到 <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>。
+    我们会告诉你,你要找的信息我们这里有没有。如果我们没有任何副本,我们会
+    如实说明,并指给你那个能对它起作用的入口:设备上的、商店的、邮箱的,或者
+    备份的。
+  </p>
+
+  <h2>你所在的地区</h2>
+  <p>
+    这份政策适用于所有提供 Gilsung 的地区。有些地区另有专门的权利和联系途径,
+    会写在你所在商店和市场看到的那一版里:
+  </p>
+  <ul>
+    <li>
+      <b>韩国。</b>依据《个人信息保护法》(PIPA),你有权知悉,有权查阅、更正、
+      删除你的个人信息并要求停止处理,也有权申请争议调解。Gilsung 完全在你
+      自己的设备上处理你的个人信息,我们一点都收不到,因此这些权利通过上面
+      说的应用内操作来行使。如需提出请求或申诉,请写信到
+      <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>;我们会回复你,
+      若所涉数据是我们从未持有过的,我们会明白地告诉你。
+    </li>
+    <li>
+      <b>日本。</b>依据《个人信息保护法》(APPI),你可以就保有个人数据要求
+      披露、更正、停止使用或删除。我们没有任何保有个人数据:你的命盘和解读
+      留在你的设备上,从不传送给我们,因此开发者手里没有可供披露或删除的
+      保有个人数据。
+    </li>
+    <li>
+      <b>台湾、香港及其他中文商店地区。</b>当地的个人资料法律,赋予你对收集
+      或持有你数据的一方主张查阅、更正和删除的权利。你在应用里的内容,我们
+      既不收集也不持有,因此这些权利在你的设备上行使;涉及购买的部分,则通过
+      应用商店行使。
+    </li>
+    <li>
+      <b>欧洲经济区、英国和瑞士。</b>你享有上面所说的数据保护权利。由于我们
+      不运营任何开发者服务器,也收不到你在应用里的任何内容,大部分权利是在你
+      的设备上或通过应用商店来行使的。各市场对应的版本会写明责任方、如设有
+      代表则写明代表,以及你当地的监管机构。
+    </li>
+    <li>
+      <b>美国,包括加利福尼亚州。</b>我们不出售你的信息,不为跨情境行为广告
+      而共享它,也不用它对你做画像以作出决定。没有任何开发者服务器保存你在
+      应用里的内容。
+    </li>
+    <li>
+      <b>其他地区。</b>当地法律另有权利规定或设有投诉机构的,本政策在该市场
+      的版本会写明它或给出链接。即便我们没有你在应用里的内容的任何副本,你
+      仍然可以向你当地的主管机构投诉。
+    </li>
+  </ul>
+
+  <h2>联系方式与紧急情况</h2>
+  <p>
+    隐私方面的问题,请写信到
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>。请不要用这个地址
+    报告正在发生的紧急情况。应用不会监测使用者,也不会代为联系紧急服务。如果
+    有人正处于紧急危险中,请拨打你当地的紧急电话号码。
+  </p>
+</section>
+
+<section class="policy" data-lang="zh-Hant" lang="zh-Hant">
+  <h2 class="langhead">繁體中文 (Chinese (Traditional))</h2>
+<h1>隱私政策</h1>
+  <p class="meta">
+    Gilsung 由 Pacefyx, Inc. 出版發行。隱私相關聯絡方式:
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>。最後更新:2026 年 7 月。
+  </p>
+
+  <h2>重點先說</h2>
+  <p>
+    Gilsung 沒有開發者伺服器,沒有帳號系統,沒有數據分析,沒有廣告,也沒有追蹤器。
+    它不會對我們發出任何網路請求。你的出生資料、四柱命盤、你儲存的人物與各項解讀,
+    都在你的手機上產生、留在你的手機裡,我們不收集這些資料。我們這邊沒有任何複本,
+    所以我們無法讀取、搜尋或刪除你的內容。可能存有複本的那幾個地方,都在你自己
+    手上:你自己的裝置備份、應用程式商店、你選擇寄出的支援信件,以及你決定分享
+    出去的東西。
+  </p>
+
+  <h2>Gilsung 是什麼</h2>
+  <p>
+    Gilsung 計算並呈現四柱命理的內容,也就是中文的八字、韓國的사주與日本的
+    四柱推命:四柱、十神、大運、流年、合婚解讀與擇日指引。它是給你自我省思用的。
+    它不是醫療、身心健康、財務、法律、婚姻或緊急事務上的專業建議,也不是對事實的
+    預測。Gilsung 不開化解之方,不給符咒法器,不教儀式做法,不宣稱能治癒、預防或
+    保證任何結果,也絕不對一個人或一段關係下成敗的判詞。
+  </p>
+
+  <h2>這款應用程式處理哪些資料,在哪裡處理</h2>
+  <p>
+    這款應用程式只處理你選擇輸入或建立的東西。實際有哪些,取決於你用了哪些功能。
+    全部都在你的裝置上處理。
+  </p>
+  <table>
+    <tr><th>項目</th><th>舉例</th></tr>
+    <tr><td>出生與地點資料</td>
+        <td>出生的日期、時間與地點;你自己選定的地點;當你使用需要知道所在位置的每日或擇日功能時,你目前的所在地。你的出生時間與地點決定了時柱,也決定了排盤所依據的真太陽時。</td></tr>
+    <tr><td>人物與合婚</td>
+        <td>可填可不填的名字、你儲存的人物、關係的標籤,以及你為了合婚解讀而輸入的第二張命盤。</td></tr>
+    <tr><td>你保留的解讀</td>
+        <td>命盤的解讀、大運與流年的解讀、擇日的結果,以及你儲存起來的解讀,全都存在本機。</td></tr>
+    <tr><td>珍藏與分享</td>
+        <td>你製作的珍藏與分享卡片,包括其中的文字或圖像。只有在你選擇分享或匯出時,才會有一份複本離開你的裝置。</td></tr>
+    <tr><td>設定與本機紀錄</td>
+        <td>語言與外觀等偏好設定、你對法律聲明的確認、提醒的選擇,以及本機的購買或權益狀態。</td></tr>
+  </table>
+  <p>
+    出生的時辰,以及一段正在考慮的關係,可能會透露出關於你或另一個人的敏感事情。
+    你不希望留在手機裡、不希望被納入備份、也不希望被特意分享出去的東西,請不要
+    輸入。成年人若輸入了另一個人的資料,包括家人的資料,就要自行負責確認自己有
+    這麼做的權利。
+  </p>
+
+  <h2>處理發生在哪裡</h2>
+  <p>
+    排盤、保存你的內容、執行安全檢查,以及把你的解讀組合起來,這些都在你的裝置上
+    完成。沒有開發者帳號,沒有開發者伺服器,沒有雲端模型,沒有數據分析、廣告或
+    追蹤器,也沒有對外呼叫任何網路模型。
+  </p>
+  <p>
+    這句話說的是開發者收集了什麼。它不表示別的地方不會存在複本:你自己保留的
+    裝置備份、作業系統的某項服務、應用程式商店的一筆交易,或是你分享的對象,
+    都可能各自存有一份。下面會逐一說明。
+  </p>
+
+  <h2>我們收到什麼</h2>
+  <p>
+    上面所說的那些內容,我們什麼都收不到。我們手上沒有伺服器上的複本,沒有帳號
+    紀錄,沒有分析用的個人檔案,也沒有廣告用的個人檔案。
+  </p>
+  <p>
+    支援是另外一條路,而且完全出於自願。在設定裡點下去,開啟的是寄給
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a> 的一封郵件,不是應用
+    程式內的表單。你來信時,你的郵件服務商會讓我們看到你的地址,以及你自己選擇
+    寫進去的內容。這款應用程式不會把你的命盤或解讀附加在那封信裡。
+  </p>
+
+  <h2>應用程式商店</h2>
+  <p>
+    Apple,以及在有提供 Google Play 的地方的 Google,各自經營自己的商店、付款、
+    帳號與客服系統。他們可能依照他們自己的條款與隱私權政策,處理商店帳號、購買、
+    收據、帳務、稅務、裝置、防詐與退款等資訊。為了讓你買到的項目能在應用程式裡
+    使用,我們可能會收到有限的交易或權益資訊。你的出生資料、命盤、解讀、合婚與
+    珍藏的內容,我們不會透過商店收到。
+    詳見 <a href="https://www.apple.com/legal/privacy/">Apple 隱私權</a> 與
+    <a href="https://policies.google.com/privacy">Google 隱私權政策</a>。經由商店
+    付款的項目,請走商店自己的退款管道;當地法律強制賦予你的消費者權利,一項也
+    不會因此減少。
+  </p>
+
+  <h2>你的解讀是怎麼來的</h2>
+  <p>
+    你的解讀,是在你的裝置上,依據你自己的命盤,從一套我們事先寫好、也事先審過的
+    文字庫組合出來的。你使用的當下,沒有任何一句話是現寫的;你輸入的東西不會傳給
+    我們,也不會被拿去訓練任何東西。解讀是給你自我省思用的,不是對事實的預測,
+    也不是醫療、身心健康、財務、法律、婚姻或緊急事務上的專業服務。
+  </p>
+
+  <h2>保存、刪除、備份與分享</h2>
+  <p>
+    你的內容會一直留在你的手機裡,直到你自己修改或刪除它、用了「重新開始」或
+    其他本機的刪除功能,或是把應用程式移除為止。這些功能會清掉應用程式的內容,
+    連同它在本機衍生出來的複本。本機的購買紀錄可能會保留,好讓應用程式認得你
+    擁有哪些項目;商店那邊的購買紀錄,留在商店。
+  </p>
+  <p>
+    如果你有做裝置備份,你的內容可能會被包含在裡面。備份由你自己、以及你的
+    作業系統或備份服務商掌控,不在我們手上。應用程式移除之後,備份裡仍可能存有
+    一份;還原備份,也可能把這些資料一併還原回來。我們無法搜尋、更動或清除你的
+    備份。要把資料從備份裡拿掉,請透過你的裝置或備份服務商去處理那份備份。
+  </p>
+  <p>
+    你分享出去的東西(分享卡片、珍藏或匯出的檔案),都是你自己決定要分享的。
+    一旦你或收到的人再把它傳到別處,那一份複本我們刪不掉。請只分享給你信任的人。
+  </p>
+
+  <h2>年齡</h2>
+  <p>
+    Gilsung 適用於 16 歲以上的人。成年人可以為了合婚或家人的解讀,輸入家人的
+    資料,包括孩子的資料。除非你有這麼做的權限,否則請不要輸入孩子的資料。
+  </p>
+
+  <h2>你的權利,以及怎麼行使</h2>
+  <p>
+    依你所在的地方而定,你可能享有查詢或閱覽、更正、刪除、限制處理或拒絕處理你
+    資料的權利,也可能有取得一份複本的權利;在以同意為依據的情況下,你可以撤回
+    同意,並且可以向主管機關提出申訴。由於 Gilsung 沒有開發者的後端,要對應用
+    程式裡的內容行使這些權利,主要的途徑就在你自己的裝置上:
+  </p>
+  <ul>
+    <li>在應用程式裡查看或修改你的個人資料、地點、人物與解讀。</li>
+    <li>用「重新開始」或對應的本機刪除功能,清掉應用程式的內容。</li>
+    <li>移除應用程式,並且另外處理掉你不想再留著的裝置複本或備份複本。</li>
+    <li>由 Apple 或 Google 保管的部分,請用商店本身的帳號、購買、收據與退款功能來處理。</li>
+  </ul>
+  <p>
+    你也可以寫信到 <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>。
+    你要求的那份資料,我們手上有沒有,我們會告訴你。如果我們沒有任何複本,我們
+    會照實說,並且告訴你該去哪裡處理它:裝置上的功能、商店、郵件,或是你的備份。
+  </p>
+
+  <h2>你所在的地區</h2>
+  <p>
+    這份政策的寫法,適用於所有提供 Gilsung 的地方。有些地區另有特別的權利與聯絡
+    管道,會出現在你所在商店與市場所顯示的版本裡:
+  </p>
+  <ul>
+    <li>
+      <b>韓國。</b>依《個人資訊保護法》(PIPA),你有權知悉,並有權查閱、更正、
+      刪除你的個人資料,以及請求停止處理,也可以申請爭議調解。Gilsung 完全在你
+      自己的裝置上處理你的個人資料,我們一點也收不到,所以這些權利透過上面說的
+      應用程式內功能來行使。要提出請求或申訴,請寫信到
+      <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>;我們會回覆你,
+      並且直接告訴你,你問的那份資料是不是我們從來就沒有過的。
+    </li>
+    <li>
+      <b>日本。</b>依《個人情報保護法》(APPI),你可以請求揭露、更正、停止利用
+      或刪除所保有的個人資料。我們一份都沒有保有:你的命盤與解讀留在你的裝置上,
+      從來不會傳送給我們,所以開發者手上沒有任何可供揭露或刪除的保有個人資料。
+    </li>
+    <li>
+      <b>台灣、香港與其他中文商店。</b>當地的個人資料法規給你權利,可以向收集
+      或持有你資料的一方請求查詢閱覽、更正與刪除。你在應用程式裡的內容,我們
+      既不收集也不持有,所以這些權利在你的裝置上行使;和購買有關的部分,則透過
+      應用程式商店。
+    </li>
+    <li>
+      <b>歐洲經濟區、英國與瑞士。</b>你享有上面所說的個人資料保護權利。由於我們
+      沒有經營開發者伺服器,也收不到你在應用程式裡的任何內容,多數權利是在你的
+      裝置上、或透過應用程式商店行使。該市場的版本會載明責任方、如有代表人時的
+      代表人,以及你當地的監管機關。
+    </li>
+    <li>
+      <b>美國,包括加州。</b>我們不出售你的資料,不為了跨情境行為廣告而分享它,
+      也不用它來剖析你、據以做成任何決定。沒有任何開發者伺服器存放你在應用程式
+      裡的內容。
+    </li>
+    <li>
+      <b>其他地區。</b>當地法律若另外給了你權利或設有申訴機關,這份政策在該市場
+      的版本會寫明,或附上連結。即使我們手上沒有你應用程式內容的任何複本,你仍然
+      可以向你當地的主管機關提出申訴。
+    </li>
+  </ul>
+
+  <h2>聯絡方式與緊急狀況</h2>
+  <p>
+    隱私方面的問題,請寫信到
+    <a href="mailto:hello@gilsung.app">hello@gilsung.app</a>。請不要用這個地址
+    通報正在發生的緊急狀況。這款應用程式不會監看使用者,也不會代替使用者聯絡
+    緊急服務。如果有人正處於立即的危險中,請撥打你當地的緊急電話號碼。
+  </p>
+</section>
+
+<footer>
     &copy; 2026 Gilsung, published by Pacefyx, Inc.
     <br><br>
     <a href="index.html">Home</a> &nbsp;&middot;&nbsp;
@@ -278,5 +1628,59 @@ footer a { color:var(--muted); }
   </footer>
 
 </div>
+
+<script>
+(function () {
+  var picks = document.querySelectorAll('.langpick a');
+  var secs = document.querySelectorAll('.policy');
+  function show(code) {
+    var found = false;
+    secs.forEach(function (s) {
+      var on = s.getAttribute('data-lang') === code;
+      s.classList.toggle('on', on);
+      if (on) found = true;
+    });
+    picks.forEach(function (a) {
+      a.setAttribute('aria-current', a.getAttribute('data-lang') === code);
+    });
+    return found;
+  }
+  function nearest(code) {
+    // the browser says zh-CN or zh-TW while the policy has zh-Hans and
+    // zh-Hant, so both an exact match and a bare-base match miss and the
+    // reader is handed English with their own language sitting right there
+    var want = code.toLowerCase(), hit = null;
+    secs.forEach(function (s) {
+      if (hit) return;
+      var have = s.getAttribute('data-lang').toLowerCase();
+      if (have === want || have.split('-')[0] === want.split('-')[0]) {
+        hit = s.getAttribute('data-lang');
+      }
+    });
+    return hit;
+  }
+  function pick() {
+    var want = decodeURIComponent(location.hash.replace('#', ''));
+    if (want && show(want)) return;
+    // no hash: offer the reader's own language if the policy has it
+    var tags = (navigator.languages || [navigator.language || 'en']);
+    for (var i = 0; i < tags.length; i++) {
+      var m = nearest(tags[i]);
+      if (m && show(m)) return;
+    }
+    show('en');
+  }
+  picks.forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      location.hash = a.getAttribute('data-lang');
+      show(a.getAttribute('data-lang'));
+      window.scrollTo(0, 0);
+    });
+  });
+  window.addEventListener('hashchange', pick);
+  pick();
+})();
+</script>
 </body>
 </html>
