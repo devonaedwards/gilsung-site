@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gilsung: แอปผังโป๊ยยี่ส่วนตัว ไม่มีโฆษณา</title>
+<meta name="description" content="อ่านผังโป๊ยยี่ (สี่เสาชะตา) ของคุณเองบนอุปกรณ์ของคุณ ธาตุวันเกิด ตาอวิ้น ความเข้ากันได้ ครบถ้วน ไม่ต้องมีบัญชี ไม่มีโฆษณา ไม่มีการสมัครสมาชิก รองรับ 7 ภาษา">
+<link rel="canonical" href="https://gilsung.app/th/">
+<link rel="alternate" hreflang="x-default" href="https://gilsung.app/">
+<link rel="alternate" hreflang="en" href="https://gilsung.app/">
+<link rel="alternate" hreflang="id" href="https://gilsung.app/id/">
+<link rel="alternate" hreflang="ja" href="https://gilsung.app/ja/">
+<link rel="alternate" hreflang="ko" href="https://gilsung.app/ko/">
+<link rel="alternate" hreflang="th" href="https://gilsung.app/th/">
+<link rel="alternate" hreflang="zh-Hans" href="https://gilsung.app/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://gilsung.app/zh-hant/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#14100C">
+<meta name="author" content="Pacefyx, Inc.">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="th_TH">
+<meta property="og:site_name" content="Gilsung">
+<meta property="og:url" content="https://gilsung.app/th/">
+<meta property="og:title" content="Gilsung: แอปผังโป๊ยยี่ส่วนตัว ไม่มีโฆษณา">
+<meta property="og:description" content="ผังโป๊ยยี่ของคุณ คำนวณบนโทรศัพท์ด้วยคณิตศาสตร์ปฏิทินจริงของศาสตร์นี้ ธาตุวันเกิด ตาอวิ้น ความเข้ากันได้ ครบถ้วน ไม่ต้องมีบัญชี ไม่มีการเสนอขายเพิ่มจากหมอดู">
+<meta property="og:image" content="https://gilsung.app/img/sky-today.png">
+<meta property="og:image:alt" content="ภาพท้องฟ้าของ Gilsung ที่แสดงเป็นภาษาญี่ปุ่น ระบุชื่อจันทรฤกษ์ทั้ง 28 ว่า Shitsu, Ki, Kyo, Jo และ Gyu">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gilsung: แอปผังโป๊ยยี่ส่วนตัว ไม่มีโฆษณา">
+<meta name="twitter:description" content="ผังโป๊ยยี่ของคุณ คำนวณบนโทรศัพท์ของคุณ ธาตุวันเกิด ตาอวิ้น ความเข้ากันได้ ไม่ต้องมีบัญชี ไม่มีโฆษณา ไม่มีการสมัครสมาชิก">
+<meta name="twitter:image" content="https://gilsung.app/img/sky-today.png">
+<link rel="stylesheet" href="/fonts.css">
+<style>
+:root { --bg:#14100C; --surface:#241c14; --line:#4a3a26; --text:#f2e8d5;
+  --muted:#a2907a; --accent:#C8A24B; --seal:#B23A2E; --jade:#6FA287; }
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--text);
+  font:300 17px/1.7 'Mulish',system-ui,sans-serif; }
+.wrap { max-width:960px; margin:0 auto; padding:0 24px; }
+header { display:flex; justify-content:space-between; align-items:center;
+  padding:28px 0; }
+header img { height:56px; }
+nav a { color:var(--muted); text-decoration:none; margin-left:22px;
+  font-size:.85rem; font-weight:600; }
+nav a:hover { color:var(--accent); }
+h1,h2 { font-family:'Fraunces',Georgia,serif; font-weight:500; }
+.hero { display:grid; grid-template-columns:1.1fr .9fr; gap:44px;
+  align-items:center; padding:48px 0 64px; }
+@media (max-width:760px){ .hero{grid-template-columns:1fr;} }
+.hero h1 { font-size:clamp(2rem,5vw,3.1rem); line-height:1.15; }
+.hero h1 em { font-style:italic; color:var(--accent); }
+.hero p { color:var(--muted); margin:18px 0 26px; max-width:46ch; }
+.hero img { width:100%; border-radius:18px; }
+.badge { display:inline-block; background:var(--accent); color:var(--bg);
+  font-weight:700; padding:14px 28px; border-radius:999px;
+  text-decoration:none; }
+.badge.soon { background:var(--surface); color:var(--muted);
+  border:1px solid var(--line); }
+.badges { display:flex; gap:12px; flex-wrap:wrap; }
+.pills { display:flex; gap:10px; flex-wrap:wrap; margin-top:22px; }
+.pill { border:1px solid var(--line); border-radius:999px;
+  padding:6px 14px; font-size:.8rem; color:var(--muted); }
+section { padding:56px 0; border-top:1px solid var(--line); }
+section h2 { font-size:clamp(1.5rem,3.4vw,2.1rem); margin-bottom:28px; }
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+@media (max-width:760px){ .cards{grid-template-columns:1fr;} }
+.card h3 { font-family:'Fraunces',Georgia,serif; font-weight:500;
+  font-size:1.15rem; color:var(--accent); margin-bottom:10px; }
+.card p { color:var(--muted); font-size:.95rem; }
+.prose p { color:var(--muted); max-width:70ch; margin-bottom:16px; }
+.langs { color:var(--muted); font-size:.95rem; max-width:70ch; }
+.langs b { color:var(--text); font-weight:600; }
+.seal { color:var(--seal); font-weight:700; }
+footer { border-top:1px solid var(--line); padding:36px 0 60px;
+  color:var(--muted); font-size:.85rem; }
+footer a { color:var(--muted); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Gilsung",
+  "alternateName": "Gilsung: BaZi Chart & Match",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "iOS 18, Android 14",
+  "url": "https://gilsung.app/",
+  "description": "แอปสี่เสาชะตาส่วนตัว ครอบคลุมทั้งโป๊ยยี่ของจีน ซาจูของเกาหลี และชิจูซุยเหมของญี่ปุ่น ผังดวง ธาตุวันเกิด สิบเทพ ตาอวิ้น ความเข้ากันได้ และคำแนะนำการเลือกวัน คำนวณบนอุปกรณ์ของคุณเอง ไม่มีบัญชี ไม่มีการเสนอขายเพิ่มจากหมอดู ไม่มีการสมัครสมาชิก",
+  "inLanguage": ["en", "ko", "ja", "zh-Hans", "zh-Hant", "th", "id"],
+  "publisher": { "@type": "Organization", "name": "Pacefyx, Inc." },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD",
+              "description": "ผังดวงและการอ่านประจำวันของคุณฟรี มีตัวเลือกซื้อครั้งเดียวเพิ่มเติมได้ ไม่มีการสมัครสมาชิก" }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/* Language switcher. Sits under the nav, wraps freely, never a dropdown:
+   a reader who cannot read the current page cannot be asked to operate one. */
+.langbar { border-top:1px solid var(--line); padding:14px 0 0; margin-top:4px;
+  font-size:.78rem; line-height:2; }
+.langbar a { color:var(--muted); text-decoration:none; margin-right:14px;
+  white-space:nowrap; }
+.langbar a:hover { color:var(--accent); text-decoration:underline; }
+.langbar a[aria-current="true"] { color:var(--accent); font-weight:700; }
+[dir="rtl"] .langbar a { margin-right:0; margin-left:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="/img/wordmark.png" alt="Gilsung">
+    <nav>
+      <a href="/faq.html">คำถามที่พบบ่อย</a>
+      <a href="/support.html">ช่วยเหลือ</a>
+      <a href="/privacy.html">ความเป็นส่วนตัว</a>
+      <a href="/terms.html">ข้อกำหนด</a>
+    </nav>
+  </header>
+
+<div class="langbar">
+  <a href="https://gilsung.app/" lang="en">English</a>
+  <a href="https://gilsung.app/id/" lang="id">Bahasa Indonesia</a>
+  <a href="https://gilsung.app/ja/" lang="ja">日本語</a>
+  <a href="https://gilsung.app/ko/" lang="ko">한국어</a>
+  <a href="https://gilsung.app/th/" lang="th" aria-current="true">ไทย</a>
+  <a href="https://gilsung.app/zh-hans/" lang="zh-Hans">简体中文</a>
+  <a href="https://gilsung.app/zh-hant/" lang="zh-Hant">繁體中文</a>
+</div>
+
+  <div class="hero">
+    <div>
+      <h1>สี่เสาชะตาของคุณ <em>คำนวณอย่างถูกต้อง</em> บนโทรศัพท์ของคุณ</h1>
+      <p>
+        Gilsung อ่านผังโป๊ยยี่ของคุณด้วยคณิตศาสตร์ปฏิทินที่ศาสตร์นี้ใช้จริง
+        ปีเริ่มต้นที่ลี่ชุน (立春) เดือนเป็นไปตามสารท (節氣) ชั่วโมงคำนวณตามเวลา
+        สุริยะท้องถิ่นจริง และสำหรับผู้ที่เกิดหลัง 23:00 น. เสาวันจะเลื่อนไปยัง
+        วันถัดไปตามที่ควรเป็น ผังดวงและการอ่านประจำวันของคุณฟรี
+      </p>
+      <div class="badges">
+        <a class="badge soon" href="#">App Store &middot; สิงหาคม 2026</a>
+        <a class="badge soon" href="#">Google Play &middot; สิงหาคม 2026</a>
+      </div>
+      <div class="pills">
+        <span class="pill">ไม่ต้องสมัคร</span>
+        <span class="pill">ไม่มีการเสนอขายเพิ่มจากหมอดู</span>
+        <span class="pill">ไม่มีการสมัครสมาชิก</span>
+        <span class="pill">ใช้งานได้แบบออฟไลน์</span>
+      </div>
+    </div>
+    <img src="/img/sky-today.png" alt="ภาพท้องฟ้าของ Gilsung ที่แสดงเป็นภาษาญี่ปุ่น ระบุชื่อจันทรฤกษ์ 室, 危, 虚, 女 และ 牛 พร้อมคำอ่าน">
+  </div>
+
+  <section>
+    <h2>ผังดวง ไม่ใช่ตลาดซื้อขาย</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>ไม่มีใครรอขายการอ่านดวงให้คุณ</h3>
+        <p>
+          ไม่มีหมอดู ไม่มีการคิดเงินรายนาที ไม่มีเหรียญ ไม่มีหัวใจ ไม่มีอะไรต้อง
+          เติม และไม่มีเครื่องรางด้วย Gilsung ไม่เคยขายทางแก้ให้กับสิ่งที่เพิ่ง
+          บอกให้คุณกังวลไป โครงสร้างแบบนั้นคือโมเดลธุรกิจทั้งหมดของแอปส่วนใหญ่
+          ในหมวดนี้ และเป็นสิ่งเดียวที่แอปนี้จะไม่ทำ
+        </p>
+      </div>
+      <div class="card">
+        <h3>คณิตศาสตร์ปฏิทินที่ทำอย่างถูกต้อง</h3>
+        <p>
+          ปีของโป๊ยยี่เริ่มต้นที่ลี่ชุน (立春) ไม่ใช่ตรุษจีน ทั้งสองมักถูกสับสน
+          กัน เดือนเป็นไปตามสารท (節氣) ตามฤดูกาล เสายามใช้เวลาสุริยะท้องถิ่น
+          จริง ไม่ใช่เวลานาฬิกา และคำนวณเส้นแบ่งของชั่วโมงจื่อดึกที่ 23:00 น.
+          ให้ถูกต้องด้วย ผังดวงของคุณระบุชื่อเสา ก้านฟ้า และกิ่งดินที่การอ่าน
+          ทุกครั้งมาจาก
+        </p>
+      </div>
+      <div class="card">
+        <h3>ฤดูกาลที่หนักหน่วง อ่านเป็นจังหวะ</h3>
+        <p>
+          ตาอวิ้น (大運) ที่หนักหน่วง จะถูกเรียกว่าหนักหน่วงตามจริง เพราะการอ่าน
+          ที่พูดแต่เรื่องดี ๆ ไม่ใช่การอ่านผังดวงของคุณอย่างแท้จริง แต่จะบอกใน
+          ฐานะจังหวะ และสิ่งที่ฤดูกาลนั้นเรียกร้องจากคุณ ไม่ใช่ลางร้าย ไม่ใช่
+          คำตัดสินตัวคุณ และไม่มีอะไรให้ซื้อตามมาทีหลังเด็ดขาด
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <h2>รายละเอียดวันเกิดของคุณอยู่ในโทรศัพท์ของคุณเท่านั้น</h2>
+    <p>
+      ไม่มีบัญชี และไม่มีเซิร์ฟเวอร์ของเรา วันเกิด เวลาเกิด และสถานที่เกิดของ
+      คุณ คนที่คุณบันทึกไว้ ผังดวงของคุณ และการอ่านทุกครั้งที่สร้างจากผังนั้น
+      ถูกสร้างขึ้นและเก็บไว้บนอุปกรณ์ของคุณเท่านั้น เราไม่เก็บข้อมูลเหล่านี้ไป
+      ซึ่งหมายความว่าเราอ่านมันไม่ได้ ค้นหามันไม่ได้ ขายมันไม่ได้ หรือทำมันหาย
+      ไม่ได้ หากคุณสำรองข้อมูลอุปกรณ์ไว้ ข้อมูลสำรองนั้นเป็นของคุณและอาจมีข้อมูล
+      เหล่านี้รวมอยู่ด้วย ซึ่ง
+      <a href="/privacy.html" style="color:var(--accent)">นโยบายความเป็นส่วนตัว</a>
+      บอกไว้อย่างตรงไปตรงมา ไม่ใช่การกล่าวอ้างเกินจริง
+    </p>
+    <p>
+      ป้ายความเป็นส่วนตัวของ App Store แสดงว่า "ไม่ได้เก็บข้อมูล" เพราะไม่มีอะไร
+      ให้เราเก็บเลย ในหมวดนี้ ความเป็นส่วนตัวเริ่มกลายเป็นสิ่งที่คู่แข่งเอาไป
+      โฆษณา ควรลองถามดูว่าแอปที่พูดแบบนั้นสามารถแสดงให้คุณเห็นได้หรือไม่ว่า
+      ข้อมูลนั้นจะไปที่ไหน
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>ทุกวันฟรี ส่วนที่เหลือ เฉพาะเมื่อคุณต้องการ</h2>
+    <p>
+      สี่เสาชะตาและการอ่านธาตุวันเกิดของคุณฟรี การอ่านประจำวันของคุณ ซึ่งสร้าง
+      จากผังดวงจริงของคุณ ไม่ใช่จากปีนักษัตร ก็ฟรีเช่นกัน สิบเทพ ก้านซ่อน และ
+      ตาอวิ้นของคุณก็มีให้อ่านด้วย
+    </p>
+    <p>
+      เมื่อคุณต้องการมากขึ้น มันก็ยังคงเรียบง่าย ความเข้ากันได้ระหว่างสองคนเป็น
+      การซื้อครั้งเดียวมูลค่าไม่สูง อ่านได้สองชั้น ชั้นในจากเสาวันของคุณ และ
+      ชั้นนอกจากเสาปีของคุณ คำแนะนำการเลือกวันมีให้เมื่อคุณกำลังวางแผนบางอย่าง
+      ไม่มีการสมัครสมาชิก ไม่มีเหรียญ ไม่มีกระเป๋าเงิน ไม่มีอะไรต้องยกเลิก
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>หนึ่งประเพณี สี่ชื่อเรียกของตัวเอง</h2>
+    <p class="langs">
+      <b>BaZi</b> 八字 &middot; <b>saju</b> 사주 &middot;
+      <b>Shichu Suimei</b> 四柱推命 &middot; <b>Empat Pilar</b> &middot;
+      <b>โป๊ยยี่</b>
+    </p>
+    <p style="margin-top:16px">
+      Gilsung เขียนด้วยภาษา <b>English, 한국어, 日本語, 简体中文, 繁體中文,
+      ไทย</b> และ <b>Bahasa Indonesia</b> และแต่ละภาษาใช้คำศัพท์ของประเพณีตนเอง
+      ไม่ใช่คำแปลจากภาษาจีน ผู้อ่านภาษาญี่ปุ่นจะเจอ 日干 และ 通変星 ไม่ใช่ 日主
+      และ 十神 ผู้อ่านภาษาเกาหลีจะเจอ 일간 และ 십신 ภาษาจีนตัวเต็มเขียนขึ้นสำหรับ
+      ไต้หวันและฮ่องกงโดยเฉพาะ ไม่ได้แปลงมาจากตัวย่อทีละตัวอักษร
+    </p>
+    <p>
+      ชื่อแอปคือ <b class="seal">吉星</b> ดาวมงคล ซึ่งเป็นศัพท์จริงในวิชา命理
+      ที่หมายถึงดาวที่เป็นมงคลในผังดวง และสำนวน 吉星高照 หมายถึงอยู่ใต้ดาวนำโชค
+      เป็นชื่อที่ผู้อ่านเจ้าของภาษาสี่คนที่ทำงานแยกกันเลือกตรงกันโดยไม่ได้นัด
+      หมาย และยังบอกกฎของแอปนี้เองด้วยว่า ผังดวงจะไม่มีวันถูกอ่านเป็นลางร้าย
+      เด็ดขาด
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2026 Gilsung เผยแพร่โดย Pacefyx, Inc. เพื่อการใคร่ครวญ ไม่ใช่การทำนาย
+    Gilsung ไม่ให้คำแนะนำทางการแพทย์ กฎหมาย การเงิน หรือคำแนะนำทางวิชาชีพอื่นใด
+    และไม่ขายวิธีแก้เคราะห์ใด ๆ
+    <br><br>
+    <a href="/support.html">ช่วยเหลือ</a> &nbsp;&middot;&nbsp;
+    <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a> &nbsp;&middot;&nbsp;
+    <a href="/terms.html">ข้อกำหนดการใช้งาน</a> &nbsp;&middot;&nbsp;
+    <a href="/credits.html">เครดิต</a>
+  </footer>
+
+</div>
+</body>
+</html>
