@@ -1,0 +1,29 @@
+# Gilsung
+
+> Gilsung is a private BaZi and saju app for iPhone and Android. It computes your four pillars, your day master reading, the ten gods and hidden stems, your luck pillars, a daily reading built from your own chart, two-layer compatibility between two people, and auspicious-day guidance. There is no account, no tracking, no advertising, no fortune tellers to pay and nothing to recharge. Your information stays on your phone and is never collected. There are no subscriptions. It is written in seven languages: English, Korean, Japanese, Simplified Chinese, Traditional Chinese, Thai and Indonesian. Published by Pacefyx, Inc. Available on Google Play; the iPhone version is on its way to the App Store.
+
+## Where to get it
+- [Google Play](https://play.google.com/store/apps/details?id=app.gilsung): available now
+- App Store: the iPhone version is on its way; no date is promised here
+
+## Pages
+- [Home](https://gilsung.app/): what Gilsung is and why it is private by design
+- [FAQ](https://gilsung.app/faq.html): privacy, price, offline use, the year boundary, remedies, and languages
+- [Support](https://gilsung.app/support.html): help and contact
+- [Privacy policy](https://gilsung.app/privacy.html): the Data Not Collected policy
+- [Terms of use](https://gilsung.app/terms.html): terms and disclaimers
+- [Sources and credits](https://gilsung.app/credits.html): calendar methods, star data, and typefaces
+
+## Key facts
+- Private by design: no account, no phone number, no tracking, no ads and no developer server. Birth details, charts and readings stay on the user's phone and are never collected. The App Store privacy label reads Data Not Collected.
+- No consultations: there are no fortune tellers, no calls, no per-minute billing, no coins, no hearts and no wallet. That marketplace structure is the business model of most apps in this category and is the one thing this app will not do.
+- No talismans: Gilsung recommends and sells no talismans, charms, remedies, rituals or name changes, and never sells a fix for something it has just told you to worry about.
+- Free: the four pillars and the day master reading, and the daily reading built from the reader's actual chart rather than from an animal sign, are free. Ten gods, hidden stems and luck pillars are there to read.
+- Optional purchases, no subscriptions: compatibility between two people is a small one-time purchase, read in two layers, the inner match from the day pillars and the outer match from the year pillars; auspicious-day guidance is there for planning. Nothing to cancel.
+- Calendar math done the way the tradition does it: the year turns at lichun, around 4 February, and not at Lunar New Year; months follow the sectional solar terms rather than lunar months; the hour pillar uses true local solar time rather than clock time; and a birth after 23:00 falls in the late-zi hour, which rolls the day pillar. Charts that disagree with another app usually disagree at one of those three points, and Gilsung says which convention it used.
+- Method: solar terms are computed on the device from the Sun's apparent longitude using VSOP87 and Meeus algorithms, not looked up from a stored table. The interpretive writing is original and was written for this app.
+- Hard seasons read as tempo: a demanding luck pillar is named as demanding, told as pace and as what a season asks of you, never as doom, never as a verdict about a person, and never followed by something to buy.
+- One tradition, several of its own names: BaZi, 八字, saju, 사주, Shichu Suimei, 四柱推命, Empat Pilar.
+- Works offline. Readings are composed on the device from the reader's own chart and a library of writing prepared and reviewed in advance.
+- Languages: seven, each in its own script, written by readers of that language rather than machine-translated.
+- Purpose: reflection and entertainment, not fixed prediction and not verdicts about people.

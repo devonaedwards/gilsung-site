@@ -31,6 +31,8 @@
 <meta name="twitter:title" content="Gilsung：私密的八字命盘 App，无广告">
 <meta name="twitter:description" content="你的八字命盘，在手机上算出。日主、大运、合婚一目了然。无需账号，没有广告，不订阅。">
 <meta name="twitter:image" content="https://gilsung.app/img/sky-today.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
 <link rel="stylesheet" href="/fonts.css">
 <style>
 :root { --bg:#14100C; --surface:#241c14; --line:#4a3a26; --text:#f2e8d5;
@@ -57,7 +59,7 @@ h1,h2 { font-family:'Fraunces',Georgia,serif; font-weight:500; }
   font-weight:700; padding:14px 28px; border-radius:999px;
   text-decoration:none; }
 .badge.soon { background:var(--surface); color:var(--muted);
-  border:1px solid var(--line); }
+  border:1px solid var(--line); cursor:default; }
 .badges { display:flex; gap:12px; flex-wrap:wrap; }
 .pills { display:flex; gap:10px; flex-wrap:wrap; margin-top:22px; }
 .pill { border:1px solid var(--line); border-radius:999px;
@@ -81,6 +83,8 @@ footer a { color:var(--muted); }
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+      "installUrl": "https://play.google.com/store/apps/details?id=app.gilsung&hl=zh_CN",
+      "sameAs": ["https://play.google.com/store/apps/details?id=app.gilsung&hl=zh_CN"],
   "name": "Gilsung",
   "alternateName": "Gilsung: BaZi Chart & Match",
   "applicationCategory": "LifestyleApplication",
@@ -174,8 +178,8 @@ footer a { color:var(--muted); }
         正确顺延。你的命盘和每日运势都是免费的。
       </p>
       <div class="badges">
-        <a class="badge soon" href="#">App Store &middot; 2026 年 8 月</a>
-        <a class="badge soon" href="#">Google Play &middot; 2026 年 8 月</a>
+        <span class="badge soon">App Store</span>
+        <a class="badge" href="https://play.google.com/store/apps/details?id=app.gilsung&amp;hl=zh_CN">Google Play</a>
       </div>
       <div class="pills">
         <span class="pill">无需注册</span>

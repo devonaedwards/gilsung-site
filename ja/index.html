@@ -31,6 +31,8 @@
 <meta name="twitter:title" content="Gilsung: 自分だけの四柱推命アプリ、広告なし">
 <meta name="twitter:description" content="あなたの命式を、スマートフォンの中で計算します。日干、大運、相性まで。アカウントも広告もサブスクリプションもありません。">
 <meta name="twitter:image" content="https://gilsung.app/img/sky-today.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
 <link rel="stylesheet" href="/fonts.css">
 <style>
 :root { --bg:#14100C; --surface:#241c14; --line:#4a3a26; --text:#f2e8d5;
@@ -57,7 +59,7 @@ h1,h2 { font-family:'Fraunces',Georgia,serif; font-weight:500; }
   font-weight:700; padding:14px 28px; border-radius:999px;
   text-decoration:none; }
 .badge.soon { background:var(--surface); color:var(--muted);
-  border:1px solid var(--line); }
+  border:1px solid var(--line); cursor:default; }
 .badges { display:flex; gap:12px; flex-wrap:wrap; }
 .pills { display:flex; gap:10px; flex-wrap:wrap; margin-top:22px; }
 .pill { border:1px solid var(--line); border-radius:999px;
@@ -81,6 +83,8 @@ footer a { color:var(--muted); }
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+      "installUrl": "https://play.google.com/store/apps/details?id=app.gilsung&hl=ja",
+      "sameAs": ["https://play.google.com/store/apps/details?id=app.gilsung&hl=ja"],
   "name": "Gilsung",
   "alternateName": "Gilsung: BaZi Chart & Match",
   "applicationCategory": "LifestyleApplication",
@@ -176,8 +180,8 @@ footer a { color:var(--muted); }
         今日のリーディングは無料です。
       </p>
       <div class="badges">
-        <a class="badge soon" href="#">App Store &middot; 2026年8月</a>
-        <a class="badge soon" href="#">Google Play &middot; 2026年8月</a>
+        <span class="badge soon">App Store</span>
+        <a class="badge" href="https://play.google.com/store/apps/details?id=app.gilsung&amp;hl=ja">Google Play</a>
       </div>
       <div class="pills">
         <span class="pill">登録不要</span>
